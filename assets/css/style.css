@@ -1,0 +1,40 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Universal CSS Start */
+
+:root {
+  --primary-color: #49af62;
+  --dim-gray: #696969;
+  --black: #000000;
+  --white: #ffffff;
+  --primary-font: "Urbanist";
+  --secondary-font: "Inter";
+  --border: 1px solid #49af62;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--primary-font);
+}
+
+p {
+  font-family: var(--secondary-font);
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--secondary-font);
+}
+
+/* Universal CSS End */
