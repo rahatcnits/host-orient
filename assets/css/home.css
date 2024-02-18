@@ -8,6 +8,7 @@
 :root {
   --primary-color: #49af62;
   --secondary-color: #1a1a1a;
+  --light-green: #e4f3e8;
   --dim-gray: #696969;
   --white: #ffffff;
   --primary-font: "Urbanist";
@@ -38,3 +39,60 @@ a {
 }
 
 /* Universal CSS End */
+
+/* Hero Start */
+
+#hero {
+  padding: 100px 0;
+  background-color: rgba(73, 175, 98, 0.3);
+  position: relative;
+  overflow: hidden;
+  z-index: -10;
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  bottom: -370px;
+  width: 110%;
+  height: 500px;
+  background: var(--white);
+  transform: rotate(-8deg);
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  z-index: -1;
+}
+
+.hero_content {
+  z-index: 10;
+}
+
+.hero_content h1 {
+  font-family: var(--primary-font);
+  font-size: 4em;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.hero_content h1 span {
+  color: var(--primary-color);
+}
+
+.hero_content p {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.hero_content p span {
+  color: var(--primary-color);
+}
+
+.hero_content .hero_img img {
+  width: 100%;
+}
+
+/* Hero End */

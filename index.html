@@ -14,6 +14,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/header-footer.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
 
     <!-- Bootstrap CSS Link -->
     <link
@@ -103,17 +104,17 @@
     </section>
     <!-- Header End -->
 
-    <!-- header start -->
-    <header class="navbar">
+    <!-- Navbar start -->
+    <header class="main_navbar">
       <div class="container">
         <div class="navbar_wrapper">
-          <div class="header-item navbar_logo">
+          <!-- <div class="header-item navbar_logo">
             <div class="logo">
               <a href="#">
                 <img src="./assets/img/logo.svg" alt="" />
               </a>
             </div>
-          </div>
+          </div> -->
 
           <!-- menu start here -->
           <div class="header-item">
@@ -125,117 +126,245 @@
                 <div class="mobile-menu-close">&times;</div>
               </div>
               <ul class="menu-main">
-                <li>
-                  <a href="#">Home</a>
+                <li class="menu-item-has-children">
+                  <a href="#">Web Hosting</a>
+                  <div class="sub-menu single-column-menu">
+                    <div class="list-item">
+                      <img
+                        src="./assets/img/navbar/mega_menu_img.png"
+                        alt="shop"
+                        class="mega_menu_img"
+                      />
+                    </div>
+                    <div class="list-item">
+                      <ul class="mega_menu_items">
+                        <li>
+                          <a href="#">
+                            <div class="mega_menu_icon">
+                              <img
+                                src="./assets/img/navbar/mega_menu_icon.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="mega_menu_item">
+                              <h4>USA Virtual Private Server</h4>
+                              <p>Plans Start at $6 per month!</p>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <div class="mega_menu_icon">
+                              <img
+                                src="./assets/img/navbar/mega_menu_icon.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="mega_menu_item">
+                              <h4>USA Virtual Private Server</h4>
+                              <p>Plans Start at $6 per month!</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </li>
                 <li class="menu-item-has-children">
                   <a href="#"
-                    >New <img src="./assets/img/icons/chevran_down.svg" alt=""
+                    >BDIX Web Hosting
+                    <img src="./assets/img/icons/chevran_down.svg" alt=""
                   /></a>
-                  <div class="sub-menu mega-menu mega-menu-column-4">
-                    <div class="list-item text-center">
-                      <a href="#">
-                        <img src="img/p1.jpg" alt="new Product" />
-                        <h4 class="title">Product 1</h4>
-                      </a>
-                    </div>
-                    <div class="list-item text-center">
-                      <a href="#">
-                        <img src="img/p2.jpg" alt="new Product" />
-                        <h4 class="title">Product 2</h4>
-                      </a>
-                    </div>
-                    <div class="list-item text-center">
-                      <a href="#">
-                        <img src="img/p3.jpg" alt="new Product" />
-                        <h4 class="title">Product 3</h4>
-                      </a>
-                    </div>
-                    <div class="list-item text-center">
-                      <a href="#">
-                        <img src="img/p4.jpg" alt="new Product" />
-                        <h4 class="title">Product 4</h4>
-                      </a>
-                    </div>
-                  </div>
-                </li>
-                <li class="menu-item-has-children">
-                  <a href="#">Shop <i class="fa fa-angle-down"></i></a>
-                  <div class="sub-menu mega-menu mega-menu-column-4">
-                    <div class="list-item">
-                      <h4 class="title">Men's Fashion</h4>
-                      <ul>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                      </ul>
-                      <h4 class="title">Beauty</h4>
-                      <ul>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title">Women's Fashion</h4>
-                      <ul>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                      </ul>
-                      <h4 class="title">Furniture</h4>
-                      <ul>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title">Home, Kitchen</h4>
-                      <ul>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                        <li><a href="#">Product List</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <img src="img/shop1.jpg" alt="shop" />
-                    </div>
-                  </div>
-                </li>
-                <li class="menu-item-has-children">
-                  <a href="#">Blog <i class="fas fa-angle-down"></i></a>
+
                   <div class="sub-menu single-column-menu">
-                    <ul>
-                      <li><a href="#">Standard Layout</a></li>
-                      <li><a href="#">Grid Layout</a></li>
-                      <li><a href="#">single Post Layout</a></li>
-                    </ul>
+                    <div class="list-item">
+                      <img
+                        src="./assets/img/navbar/mega_menu_img.png"
+                        alt="shop"
+                        class="mega_menu_img"
+                      />
+                    </div>
+                    <div class="list-item">
+                      <ul class="mega_menu_items">
+                        <li>
+                          <a href="#">
+                            <div class="mega_menu_icon">
+                              <img
+                                src="./assets/img/navbar/mega_menu_icon.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="mega_menu_item">
+                              <h4>USA Virtual Private Server</h4>
+                              <p>Plans Start at $6 per month!</p>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <div class="mega_menu_icon">
+                              <img
+                                src="./assets/img/navbar/mega_menu_icon.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="mega_menu_item">
+                              <h4>USA Virtual Private Server</h4>
+                              <p>Plans Start at $6 per month!</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </li>
                 <li class="menu-item-has-children">
-                  <a href="#">Pages <i class="fas fa-angle-down"></i></a>
+                  <a href="#"
+                    >Virtual Private Server <i class="fa fa-angle-down"></i
+                  ></a>
                   <div class="sub-menu single-column-menu">
-                    <ul>
-                      <li><a href="#">Login</a></li>
-                      <li><a href="#">Register</a></li>
-                      <li><a href="#">Faq</a></li>
-                      <li><a href="#">404 Page</a></li>
-                    </ul>
+                    <div class="list-item">
+                      <img
+                        src="./assets/img/navbar/mega_menu_img.png"
+                        alt="shop"
+                        class="mega_menu_img"
+                      />
+                    </div>
+                    <div class="list-item">
+                      <ul class="mega_menu_items">
+                        <li>
+                          <a href="#">
+                            <div class="mega_menu_icon">
+                              <img
+                                src="./assets/img/navbar/mega_menu_icon.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="mega_menu_item">
+                              <h4>USA Virtual Private Server</h4>
+                              <p>Plans Start at $6 per month!</p>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <div class="mega_menu_icon">
+                              <img
+                                src="./assets/img/navbar/mega_menu_icon.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="mega_menu_item">
+                              <h4>USA Virtual Private Server</h4>
+                              <p>Plans Start at $6 per month!</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#"
+                    >Dedicated Server <i class="fas fa-angle-down"></i
+                  ></a>
+
+                  <div class="sub-menu single-column-menu">
+                    <div class="list-item">
+                      <img
+                        src="./assets/img/navbar/mega_menu_img.png"
+                        alt="shop"
+                        class="mega_menu_img"
+                      />
+                    </div>
+                    <div class="list-item">
+                      <ul class="mega_menu_items">
+                        <li>
+                          <a href="#">
+                            <div class="mega_menu_icon">
+                              <img
+                                src="./assets/img/navbar/mega_menu_icon.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="mega_menu_item">
+                              <h4>USA Virtual Private Server</h4>
+                              <p>Plans Start at $6 per month!</p>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <div class="mega_menu_icon">
+                              <img
+                                src="./assets/img/navbar/mega_menu_icon.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="mega_menu_item">
+                              <h4>USA Virtual Private Server</h4>
+                              <p>Plans Start at $6 per month!</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#"
+                    >Email Service <i class="fas fa-angle-down"></i
+                  ></a>
+
+                  <div class="sub-menu single-column-menu">
+                    <div class="list-item">
+                      <img
+                        src="./assets/img/navbar/mega_menu_img.png"
+                        alt="shop"
+                        class="mega_menu_img"
+                      />
+                    </div>
+                    <div class="list-item">
+                      <ul class="mega_menu_items">
+                        <li>
+                          <a href="#">
+                            <div class="mega_menu_icon">
+                              <img
+                                src="./assets/img/navbar/mega_menu_icon.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="mega_menu_item">
+                              <h4>USA Virtual Private Server</h4>
+                              <p>Plans Start at $6 per month!</p>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <div class="mega_menu_icon">
+                              <img
+                                src="./assets/img/navbar/mega_menu_icon.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="mega_menu_item">
+                              <h4>USA Virtual Private Server</h4>
+                              <p>Plans Start at $6 per month!</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="#">Other Services</a>
                 </li>
               </ul>
             </nav>
@@ -251,7 +380,34 @@
         </div>
       </div>
     </header>
-    <!-- header end -->
+    <!-- Navbar end -->
+
+    <!-- Hero Start -->
+    <section id="hero">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-6">
+            <div class="hero_content">
+              <h1>Fastest <span>Performance</span> Web Hosting</h1>
+              <p>
+                Touch the success! Domain and Secure Web Hosting <br />
+                from
+                <span>$4.99 per month</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero_content">
+              <div class="hero_img">
+                <img src="./assets/img/home/hero.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero end -->
 
     <!-- Scripts -->
 
