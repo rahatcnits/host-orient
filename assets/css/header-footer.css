@@ -612,3 +612,249 @@ ul {
 }
 
 /* Navbar End */
+
+/* Footer Start */
+
+#footer {
+  background: var(--secondary-color);
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.footer_content h4 {
+  font-family: var(--primary-font);
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--white);
+  margin: 30px 0;
+}
+
+.footer_items li:not(:last-child) {
+  padding-bottom: 15px;
+}
+
+.footer_items li a {
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  color: var(--white);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.footer_items li a:hover {
+  color: var(--primary-color);
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--dim-gray);
+  margin-top: 50px;
+}
+
+.footer_information {
+  margin-top: 50px;
+}
+
+.footer_information_item h2 {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 2.2em;
+  color: var(--white);
+  margin-bottom: 40px;
+}
+
+.footer_location {
+  display: flex;
+  align-items: start;
+  margin-bottom: 30px;
+}
+
+.footer_information_item ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer_information_item ul li:last-child {
+  margin-bottom: 0;
+}
+
+.footer_location span,
+.footer_information_item ul li a {
+  font-family: var(--secondary-font);
+  color: var(--white);
+  font-size: 1em;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.footer_location span:hover,
+.footer_information_item ul li a:hover {
+  color: var(--primary-color);
+}
+
+.footer_info_icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.footer_info_icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.footer_about p {
+  font-family: var(--secondary-font);
+  color: var(--white);
+  font-size: 1em;
+  text-align: center;
+  padding: 0 20px;
+  padding-bottom: 15px;
+}
+
+.footer_payment_icon {
+  padding: 0 20px;
+}
+
+.footer_payment_icon img {
+  width: 100%;
+}
+
+.footer_social h4 {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 1.4em;
+  color: var(--white);
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.footer_social_items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer_social_items li a {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.footer_social_items li a svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer_social_items li a:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* Footer End */
+
+/* Copyright Start */
+
+#copyright {
+  background: #000000;
+  padding: 25px 0;
+}
+
+.copyright_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright_text p {
+  color: var(--white);
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.copyright_text p span {
+  font-weight: 600;
+}
+
+.copyright_items {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.copyright_items li a {
+  color: var(--white);
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.copyright_items li a:hover {
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .copyright_text p {
+    font-size: 14px;
+  }
+
+  .copyright_items li a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .copyright_wrapper {
+    display: block;
+    text-align: center;
+  }
+
+  .copyright_text p {
+    margin-bottom: 10px;
+  }
+
+  .copyright_items {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .copyright_items {
+    column-gap: 20px;
+    row-gap: 5px;
+  }
+}
+
+/* Copyright End */
