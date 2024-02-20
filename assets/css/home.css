@@ -232,6 +232,17 @@ a {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 576px) {
+  #domain_form {
+    gap: 12px;
+  }
+
+  #domain_form #domain_btn {
+    font-size: 1em;
+    padding: 0 20px;
+  }
+}
+
 /* Domain End */
 
 /* Pricing Plan Start */

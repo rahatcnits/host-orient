@@ -436,13 +436,19 @@
 
         <div class="row d-flex justify-content-center">
           <div class="col-lg-8">
-            <form id="domain_form" action="#">
+            <form
+              id="domain_form"
+              action="https://hostorient.com/ap/cart.php?a=add&domain=register"
+              method="post"
+            >
               <input
                 id="domain_input"
                 type="text"
+                name="query"
+                size="20"
                 placeholder="Enter your domain name..."
               />
-              <button id="domain_btn" type="submit">Search</button>
+              <input type="submit" id="domain_btn" value="Search" />
             </form>
           </div>
         </div>

@@ -39,6 +39,37 @@ function showSubMenu(hasChildren) {
   menu.querySelector(".mobile-menu-head").classList.add("active");
 }
 
+function showSubMenu(hasChildren) {
+  subMenu = hasChildren.querySelector(".sub-menu");
+  subMenu.classList.add("active");
+
+  // Calculate submenu width
+  const subMenuWidth = subMenu.offsetWidth;
+
+  // Calculate the position of the parent menu item
+  const parentRect = hasChildren.getBoundingClientRect();
+  const parentOffset = parentRect.left;
+
+  // Check if there's enough space on the right side of the parent item
+  const spaceOnRight = window.innerWidth - parentOffset - subMenuWidth;
+
+  // Adjust submenu position based on available space
+  if (spaceOnRight < 0) {
+    subMenu.style.left = "auto";
+    subMenu.style.right = "0";
+  } else {
+    subMenu.style.left = "0";
+    subMenu.style.right = "auto";
+  }
+
+  // Animation and other operations
+  subMenu.style.animation = "slideLeft 0.5s ease forwards";
+  const menuTitle =
+    hasChildren.querySelector("i").parentNode.childNodes[0].textContent;
+  menu.querySelector(".current-menu-title").innerHTML = menuTitle;
+  menu.querySelector(".mobile-menu-head").classList.add("active");
+}
+
 function hideSubMenu() {
   subMenu.style.animation = "slideRight 0.5s ease forwards";
   setTimeout(() => {
