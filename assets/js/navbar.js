@@ -48,24 +48,29 @@ function showSubMenu(hasChildren) {
 
   // Calculate the position of the parent menu item
   const parentRect = hasChildren.getBoundingClientRect();
-  const parentOffset = parentRect.left;
+  const spaceOnRight = window.innerWidth - parentRect.right;
+  const spaceOnLeft = parentRect.left;
 
-  // Check if there's enough space on the right side of the parent item
-  const spaceOnRight = window.innerWidth - parentOffset - subMenuWidth;
+  // Determine if there's enough space on the right or left side
+  const hasSpaceOnRight = spaceOnRight >= subMenuWidth;
+  const hasSpaceOnLeft = spaceOnLeft >= subMenuWidth;
 
-  // Adjust submenu position based on available space
-  if (spaceOnRight < 0) {
-    subMenu.style.left = "auto";
+  // Position the submenu based on available space
+  if (hasSpaceOnRight) {
+    subMenu.style.left = "auto"; // Position to the right of the parent item
     subMenu.style.right = "0";
+  } else if (hasSpaceOnLeft) {
+    subMenu.style.left = "0"; // Position to the left of the parent item
+    subMenu.style.right = "auto";
   } else {
-    subMenu.style.left = "0";
+    // Fallback to default positioning if space is insufficient on both sides
+    subMenu.style.left = "auto";
     subMenu.style.right = "auto";
   }
 
   // Animation and other operations
   subMenu.style.animation = "slideLeft 0.5s ease forwards";
-  const menuTitle =
-    hasChildren.querySelector("i").parentNode.childNodes[0].textContent;
+  const menuTitle = hasChildren.querySelector("a").textContent;
   menu.querySelector(".current-menu-title").innerHTML = menuTitle;
   menu.querySelector(".mobile-menu-head").classList.add("active");
 }
