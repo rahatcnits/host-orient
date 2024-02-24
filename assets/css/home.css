@@ -404,7 +404,7 @@ a {
 
 .pricing_plan_btn a:hover {
   background: var(--primary-color);
-  color: var(--white);
+  color: var(--secondary-color);
 }
 
 @media screen and (max-width: 1400px) {
@@ -523,7 +523,7 @@ a {
 .hosting_feature_btn a:hover {
   background: var(--primary-color);
   border-color: var(--primary-color);
-  color: var(--white);
+  color: var(--secondary-color);
 }
 
 @media screen and (max-width: 990px) {
