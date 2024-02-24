@@ -42,15 +42,10 @@ a {
 /* Hero Start */
 
 #hero {
-  padding: 100px 0;
+  padding: 50px 0;
   background-color: rgba(73, 175, 98, 0.3);
   position: relative;
   overflow: hidden;
-  z-index: -10;
-}
-
-.hero_content {
-  z-index: 10;
 }
 
 .hero_content h1 {
@@ -106,6 +101,284 @@ a {
 }
 
 /* Hero End */
+
+/* Pricing Plan Start */
+
+#vps_pricing_plan {
+  padding: 100px 0;
+}
+
+.pricing_plan_head h1 {
+  font-family: var(--primary-font);
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.pricing_plan_head p {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  color: var(--dim-gray);
+  max-width: 800px;
+  margin: 30px auto 0;
+}
+
+.pricing_card {
+  border: 1px solid #e6e7e8;
+  padding: 20px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  margin-top: 24px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.pricing_card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.price_head h1 {
+  font-family: var(--primary-font);
+  font-size: 2.5em;
+  font-weight: 700;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.plan_price {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-size: 1.8em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.plan_price span {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  vertical-align: super;
+}
+
+.price_items {
+  margin-top: 30px !important;
+}
+
+.price_items li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e6e7e8;
+}
+
+.price_items li:last-child {
+  border-bottom: none;
+  padding-bottom: 0 !important;
+}
+
+.price_item_icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.price_item_icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.price_items li span {
+  display: inline-block;
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--dim-gray);
+}
+
+.price_btn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.price_btn a {
+  font-family: var(--secondary-font);
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1.1em;
+  display: inline-block;
+  padding: 10px 45px;
+  background: var(--secondary-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.price_btn a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* Pricing Plan End */
+
+/* BDIX Info Start */
+
+#bdix_info {
+  background: rgba(73, 175, 98, 0.3);
+  padding: 100px 0;
+}
+
+.bdix_info_img img {
+  width: 100%;
+}
+
+.bdix_info_content h1 {
+  font-family: var(--primary-font);
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 50px;
+}
+
+.bdix_info_content p {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--dim-gray);
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.bdix_info_card {
+  background: var(--light-green);
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.bdix_info_card h4 {
+  font-family: var(--primary-font);
+  font-size: 1.4em;
+  font-weight: 700;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bdix_info_card p {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--dim-gray);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* BDIX Info End */
+
+/* Feature Start */
+
+#feature {
+  padding: 100px 0;
+}
+
+.feature_head h1 {
+  font-family: var(--primary-font);
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.feature_head p {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  color: var(--dim-gray);
+  margin-top: 30px;
+}
+
+.feature_card {
+  border: 1px solid #e6e7e8;
+  padding: 20px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  margin-top: 25px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.feature_card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature_card_icon {
+  width: 80px;
+  aspect-ratio: 1/1;
+  display: block;
+  margin: auto;
+}
+
+.feature_card_icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.feature_card_content h4 {
+  font-family: var(--primary-font);
+  font-size: 1.3em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary-color);
+  margin: 20px 0;
+}
+
+.feature_card_content p {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  color: var(--dim-gray);
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 990px) {
+  .feature_head h1 {
+    font-size: 2em;
+  }
+}
+
+/* Feature End */
 
 /* Datacenter Start */
 
