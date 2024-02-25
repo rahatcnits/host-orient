@@ -53,23 +53,47 @@ a {
   font-size: 4em;
   font-weight: 700;
   color: var(--secondary-color);
+  margin-bottom: 50px;
 }
 
 .hero_content h1 span {
   color: var(--primary-color);
 }
 
-.hero_content p {
-  font-family: var(--secondary-font);
-  font-size: 1em;
-  font-weight: 500;
-  color: var(--secondary-color);
-  max-width: 420px;
-  margin-top: 50px;
+.bdix_hero_item_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.hero_content p span {
-  color: var(--primary-color);
+.hero_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.hero_item:last-child {
+  margin-bottom: 0;
+}
+
+.hero_item .hero_item_icon {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  flex-shrink: 0;
+}
+
+.hero_item .hero_item_icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero_item span {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  color: var(--secondary-color);
+  font-weight: 500;
 }
 
 .hero_content .hero_img img {
@@ -98,6 +122,12 @@ a {
   .hero_content h1 {
     font-size: 2.2em;
   }
+
+  .bdix_hero_item_wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
 }
 
 /* Hero End */
@@ -123,7 +153,7 @@ a {
   text-align: center;
   color: var(--dim-gray);
   max-width: 800px;
-  margin: 30px auto 0;
+  margin: 30px auto 20px;
 }
 
 .pricing_card {
@@ -237,6 +267,27 @@ a {
   color: var(--secondary-color);
 }
 
+@media screen and (max-width: 990px) {
+  .pricing_plan_head h1 {
+    font-size: 2em;
+  }
+
+  .price_head h1 {
+    font-size: 2em;
+  }
+
+  .plan_price {
+    font-size: 1.5em;
+  }
+
+  .plan_price span {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    vertical-align: super;
+  }
+}
+
 /* Pricing Plan End */
 
 /* BDIX Info Start */
@@ -247,7 +298,9 @@ a {
 }
 
 .bdix_info_img img {
-  width: 100%;
+  width: 90%;
+  display: block;
+  margin: auto;
 }
 
 .bdix_info_content h1 {
@@ -296,7 +349,95 @@ a {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 1200px) {
+  .bdix_info_img img {
+    width: 100%;
+  }
+
+  .bdix_info_content h1 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+  }
+
+  .bdix_info_content p {
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+}
+
 /* BDIX Info End */
+
+/* Operating System Start */
+
+#os {
+  padding-top: 100px;
+}
+
+.os_head h1 {
+  font-family: var(--primary-font);
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.os_head p {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  color: var(--dim-gray);
+  margin-top: 30px;
+}
+
+.os_card {
+  border: 1px solid #e6e7e8;
+  padding: 20px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  margin-top: 24px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.os_card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.os_icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+}
+
+.os_icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.os_card h2 {
+  font-family: var(--primary-font);
+  font-size: 1.4em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary-color);
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 990px) {
+  .os_head h1 {
+    font-size: 2em;
+  }
+}
+
+/* Operating System End */
 
 /* Feature Start */
 
@@ -329,7 +470,7 @@ a {
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
-  margin-top: 25px;
+  margin-top: 24px;
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
