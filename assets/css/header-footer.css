@@ -758,11 +758,6 @@ ul {
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
-  transition: 0.3s !important;
-  -webkit-transition: 0.3s !important;
-  -moz-transition: 0.3s !important;
-  -ms-transition: 0.3s !important;
-  -o-transition: 0.3s !important;
 }
 
 .mega_menu_items li a:hover {
