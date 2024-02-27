@@ -87,10 +87,8 @@ a {
 }
 
 @media screen and (max-width: 990px) {
-  .hero_content .hero_img img {
-    width: 80%;
-    display: block;
-    margin: 50px auto 0;
+  .hero_content .hero_img {
+    display: none;
   }
 }
 
@@ -244,6 +242,10 @@ a {
 }
 
 @media screen and (max-width: 990px) {
+  #vps_pricing_plan {
+    padding: 60px 0;
+  }
+
   .pricing_plan_head h1 {
     font-size: 2em;
   }
@@ -296,6 +298,16 @@ a {
 .zimbra_content p span {
   font-size: 1.2em;
   font-weight: 700;
+}
+
+@media screen and (max-width: 990px) {
+  #zimbra {
+    padding: 60px 0;
+  }
+
+  .zimbra_img {
+    display: none;
+  }
 }
 
 /* Zimbra End */
@@ -375,6 +387,10 @@ a {
 }
 
 @media screen and (max-width: 990px) {
+  #feature {
+    padding: 60px 0;
+  }
+
   .feature_head h1 {
     font-size: 2em;
   }
@@ -488,6 +504,16 @@ a {
   border-top: 1px solid #e6e7e8;
 }
 
+@media screen and (max-width: 990px) {
+  #faq {
+    padding-bottom: 60px;
+  }
+
+  .faq_head h1 {
+    font-size: 2em;
+  }
+}
+
 /* FAQ Start */
 
 /* Newsletter Start */
@@ -599,10 +625,8 @@ a {
     margin-bottom: 50px;
   }
 
-  .newsletter_img img {
-    width: 60%;
-    display: block;
-    margin: auto;
+  .newsletter_img {
+    display: none;
   }
 
   .newsletter_content h1 {
@@ -613,6 +637,10 @@ a {
 
   .newsletter_content p {
     text-align: center;
+  }
+
+  .newsletter_icon {
+    width: 90px;
   }
 }
 

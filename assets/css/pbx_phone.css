@@ -87,10 +87,8 @@ a {
 }
 
 @media screen and (max-width: 990px) {
-  .hero_content .hero_img img {
-    width: 80%;
-    display: block;
-    margin: 50px auto 0;
+  .hero_content .hero_img {
+    display: none;
   }
 }
 
@@ -244,6 +242,10 @@ a {
 }
 
 @media screen and (max-width: 990px) {
+  #vps_pricing_plan {
+    padding: 60px 0;
+  }
+
   .pricing_plan_head h1 {
     font-size: 2em;
   }
@@ -333,8 +335,12 @@ a {
 }
 
 @media screen and (max-width: 1200px) {
-  .bdix_info_img img {
-    width: 100%;
+  #bdix_info {
+    padding: 60px 0;
+  }
+
+  .bdix_info_img {
+    display: none;
   }
 
   .bdix_info_content h1 {
@@ -400,6 +406,16 @@ a {
 
 .offer_btn a:hover {
   background: var(--secondary-color);
+}
+
+@media screen and (max-width: 990px) {
+  #offer {
+    padding: 60px 0;
+  }
+
+  .offer_content h1 {
+    font-size: 2em;
+  }
 }
 
 /* Offer End */
@@ -481,6 +497,10 @@ a {
 @media screen and (max-width: 990px) {
   .feature_head h1 {
     font-size: 2em;
+  }
+
+  #feature {
+    padding: 60px 0;
   }
 }
 
@@ -590,6 +610,16 @@ a {
   font-weight: 500;
   padding: 20px 0;
   border-top: 1px solid #e6e7e8;
+}
+
+@media screen and (max-width: 990px) {
+  #faq {
+    padding-bottom: 60px;
+  }
+
+  .faq_head h1 {
+    font-size: 2em;
+  }
 }
 
 /* FAQ Start */
@@ -703,10 +733,8 @@ a {
     margin-bottom: 50px;
   }
 
-  .newsletter_img img {
-    width: 60%;
-    display: block;
-    margin: auto;
+  .newsletter_img {
+    display: none;
   }
 
   .newsletter_content h1 {
@@ -717,6 +745,10 @@ a {
 
   .newsletter_content p {
     text-align: center;
+  }
+
+  .newsletter_icon {
+    width: 90px;
   }
 }
 
