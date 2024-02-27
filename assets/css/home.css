@@ -1160,9 +1160,24 @@ a {
   height: 25px;
 }
 
-.testimonial_icon .quote svg {
+.testimonial_icon .quote {
   width: 60px;
   height: 60px;
+  border: 2px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 2px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.testimonial_icon .quote img {
+  width: 22px;
+  height: 22px;
 }
 
 .testimonial_msg p {
