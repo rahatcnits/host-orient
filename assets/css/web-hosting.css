@@ -130,13 +130,37 @@ a {
   margin: 30px auto 20px;
 }
 
+.price_toggle_btn {
+  max-width: 350px;
+  margin: 10px auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price_toggle_text {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--dim-gray);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.price_toggle_text.active {
+  color: var(--primary-color);
+}
+
 #toggle_checkbox {
   display: none;
 }
 
 .price_toggle_btn label {
   position: relative;
-  display: block;
+  display: inline-block;
   width: 64px;
   height: 28px;
   margin: 0 auto;
@@ -176,6 +200,7 @@ a {
   width: 60px;
   height: 28px;
   border-color: var(--primary-color);
+  background: var(--white);
 }
 
 #toggle_checkbox:checked + label:after {
@@ -183,8 +208,8 @@ a {
   right: 8px;
   width: 20px;
   height: 20px;
-  border-color: var(--white);
-  background: var(--white);
+  border: 2px solid var(--primary-color);
+  background: var(--primary-color);
 }
 
 .pricing_card {
@@ -223,6 +248,10 @@ a {
   font-size: 1.8em;
   font-weight: 700;
   text-align: center;
+}
+
+.plan_price b {
+  font-weight: 700;
 }
 
 .plan_price span {

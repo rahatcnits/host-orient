@@ -575,19 +575,25 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="price_toggle_btn">
+              <span class="price_toggle_text monthly active"
+                >Billed Monthly</span
+              >
               <input type="checkbox" id="toggle_checkbox" />
               <label for="toggle_checkbox"></label>
+              <span class="price_toggle_text annually">Billed Annually</span>
             </div>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-xl-3 col-lg-6">
+          <div class="col-lg-4">
             <div class="pricing_card">
               <div class="price_head">
                 <h1>Essential</h1>
               </div>
-              <div class="plan_price">$39.99<span>/mo*</span></div>
+              <div class="plan_price">
+                $<b data-price="39.99">39.99</b><span>/mo*</span>
+              </div>
 
               <ul class="price_items">
                 <li>
@@ -671,12 +677,14 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-6">
+          <div class="col-lg-4">
             <div class="pricing_card">
               <div class="price_head">
                 <h1>Essential</h1>
               </div>
-              <div class="plan_price">$39.99<span>/mo*</span></div>
+              <div class="plan_price">
+                $<b data-price="39.99">39.99</b><span>/mo*</span>
+              </div>
 
               <ul class="price_items">
                 <li>
@@ -760,101 +768,14 @@
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-6">
+          <div class="col-lg-4">
             <div class="pricing_card">
               <div class="price_head">
                 <h1>Essential</h1>
               </div>
-              <div class="plan_price">$39.99<span>/mo*</span></div>
-
-              <ul class="price_items">
-                <li>
-                  <div class="price_item_icon">
-                    <img
-                      src="./assets/img/icons/email-server/email_pricing_plan_icon_1.svg"
-                      alt=""
-                    />
-                  </div>
-                  <span>4 Core Processor</span>
-                </li>
-
-                <li>
-                  <div class="price_item_icon">
-                    <img
-                      src="./assets/img/icons/email-server/email_pricing_plan_icon_2.svg"
-                      alt=""
-                    />
-                  </div>
-                  <span>8 GB DDR4 RAM</span>
-                </li>
-
-                <li>
-                  <div class="price_item_icon">
-                    <img
-                      src="./assets/img/icons/email-server/email_pricing_plan_icon_3.svg"
-                      alt=""
-                    />
-                  </div>
-                  <span>80 GB NVMe Storage</span>
-                </li>
-
-                <li>
-                  <div class="price_item_icon">
-                    <img
-                      src="./assets/img/icons/email-server/email_pricing_plan_icon_4.svg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <span style="padding-bottom: 6px">Unlimited Domains</span
-                    ><br />
-                    <span>Unlimited Accounts</span>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="price_item_icon">
-                    <img
-                      src="./assets/img/icons/email-server/email_pricing_plan_icon_5.svg"
-                      alt=""
-                    />
-                  </div>
-                  <span>Windows/MAC Apps</span>
-                </li>
-
-                <li>
-                  <div class="price_item_icon">
-                    <img
-                      src="./assets/img/icons/email-server/email_pricing_plan_icon_6.svg"
-                      alt=""
-                    />
-                  </div>
-                  <span>Robust Security</span>
-                </li>
-
-                <li>
-                  <div class="price_item_icon">
-                    <img
-                      src="./assets/img/icons/email-server/email_pricing_plan_icon_7.svg"
-                      alt=""
-                    />
-                  </div>
-                  <span>SPF, DKIM, DMARC, rDNS, BIMI</span>
-                </li>
-              </ul>
-
-              <div class="price_btn">
-                <a href="#">Order Now</a>
+              <div class="plan_price">
+                $<b data-price="39.99">39.99</b><span>/mo*</span>
               </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-6">
-            <div class="pricing_card">
-              <div class="price_head">
-                <h1>Essential</h1>
-              </div>
-              <div class="plan_price">$39.99<span>/mo*</span></div>
 
               <ul class="price_items">
                 <li>
@@ -2166,6 +2087,7 @@
     <script src="./assets/js/navbar.js"></script>
     <script src="./assets/js/backToTop.js"></script>
     <script src="./assets/js/accordion.js"></script>
+    <script src="./assets/js/pricing.js"></script>
 
     <!-- Bootstrap JS Link Start -->
     <script src="./assets/css/bootstrap/js/bootstrap.min.js"></script>
