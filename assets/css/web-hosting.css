@@ -367,7 +367,7 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   padding: 30px 0;
 }
 
@@ -451,6 +451,24 @@ a {
   font-size: 1em;
   font-weight: 500;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 990px) {
+  #cloud_linux {
+    padding: 40px 0 60px;
+  }
+
+  .cloud_linux_img img {
+    display: none;
+  }
+
+  .cloud_linux_content h1 {
+    font-size: 2em;
+  }
+
+  .cloud_linux_content h4 {
+    font-size: 1.6em;
+  }
 }
 
 /* Cloud Linux End */
@@ -620,15 +638,24 @@ a {
   margin: 30px auto 0;
 }
 
+.advanced_feature_card {
+  margin-top: 30px;
+}
+
 .advanced_feature_card ul li {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding: 15px 0;
+}
+
+.advanced_feature_card ul li:last-child {
+  padding-bottom: 0;
 }
 
 .advanced_feature_icon {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   line-height: 10px;
 }
 
@@ -641,6 +668,16 @@ a {
   font-family: var(--secondary-font);
   color: var(--dim-gray);
   font-weight: 500;
+}
+
+@media screen and (max-width: 990px) {
+  #advanced_feature {
+    padding: 60px 0 0;
+  }
+
+  .advanced_feature_head h1 {
+    font-size: 2em;
+  }
 }
 
 /* Advanced Feature End */
