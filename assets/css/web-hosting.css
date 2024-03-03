@@ -354,6 +354,107 @@ a {
 
 /* Pricing Plan End */
 
+/* Cloud Linux Start */
+
+#cloud_linux {
+  padding: 40px 0 100px;
+}
+
+.cloud_linux_wrapper {
+  background: url(../img/web-hosting/cloud_linux_bg.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* background-attachment: fixed; */
+  padding: 30px 0;
+}
+
+.cloud_linux_img img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.cloud_linux_card {
+  border: 1px solid #e6e7e8;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  margin-top: 24px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.cloud_linux_card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.cloud_linux_card h4 {
+  font-family: var(--primary-font);
+  font-size: 1.4em;
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-align: center;
+}
+
+.cloud_linux_card ul li {
+  font-family: var(--secondary-font);
+  color: var(--dim-gray);
+  font-size: 1em;
+  text-align: center;
+  font-weight: 500;
+  padding: 15px 0;
+  border-bottom: 1px solid #e6e7e8;
+}
+
+.cloud_linux_card ul li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.cloud_linux_card ul li span {
+  font-weight: 600;
+}
+
+.cloud_linux_content h1 {
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cloud_linux_content h4 {
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.cloud_linux_content h4 span {
+  color: var(--primary-color);
+}
+
+.cloud_linux_content p {
+  font-family: var(--secondary-font);
+  color: var(--dim-gray);
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Cloud Linux End */
+
 /* Hosting Feature Start */
 
 #hosting_feature {
@@ -494,6 +595,55 @@ a {
 }
 
 /* Hosting Feature End */
+
+/* Advanced Feature Start */
+
+#advanced_feature {
+  padding: 100px 0 0;
+}
+
+.advanced_feature_head h1 {
+  font-family: var(--primary-font);
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.advanced_feature_head p {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  color: var(--dim-gray);
+  max-width: 900px;
+  margin: 30px auto 0;
+}
+
+.advanced_feature_card ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.advanced_feature_icon {
+  width: 18px;
+  height: 18px;
+  line-height: 10px;
+}
+
+.advanced_feature_icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.advanced_feature_card ul li span {
+  font-family: var(--secondary-font);
+  color: var(--dim-gray);
+  font-weight: 500;
+}
+
+/* Advanced Feature End */
 
 /* Feature Start */
 
