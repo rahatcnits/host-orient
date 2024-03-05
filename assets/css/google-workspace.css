@@ -149,20 +149,37 @@ a {
   padding: 100px 0;
 }
 
+.gspace_feature_head h1 {
+  font-family: var(--primary-font);
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.gspace_feature_head p {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  color: var(--dim-gray);
+  max-width: 800px;
+  margin: 30px auto 20px;
+}
+
 .content {
   width: 100%;
   transition: 0.3s ease;
 }
 
 .tabs {
-  margin: auto;
+  margin: 30px auto 0;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 25px;
 }
 
-/* Tab Links */
 .tablinks {
   background: transparent;
   border: none;
@@ -171,7 +188,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 1.1em;
   font-family: var(--secondary-font);
   color: var(--dim-gray);
   font-weight: 600;
@@ -191,7 +208,6 @@ a {
   color: var(--secondary-color);
 }
 
-/* tab content */
 .wrapper_tabcontent {
   margin-top: 0px;
   z-index: -3;
@@ -219,7 +235,6 @@ a {
   display: block;
 }
 
-/* Text*/
 .tabcontent {
   transition: all 1s ease;
   animation: fadeEffect 0.6s ease;
@@ -258,6 +273,7 @@ a {
 .gspace_feature_icon {
   width: 60px;
   height: 60px;
+  flex-shrink: 0;
 }
 
 .gspace_feature_icon img {
@@ -270,7 +286,6 @@ a {
   font-weight: 700;
   font-size: 1.6em;
   color: var(--secondary-color);
-  padding-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -284,6 +299,49 @@ a {
 
 .gspace_feature_img img {
   width: 100%;
+}
+
+.wrapper_tabcontent {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 990px) {
+  .gspace_feature_head h1 {
+    font-size: 2em;
+  }
+
+  .tablinks {
+    font-size: 1em;
+  }
+
+  .gspace_feature_item_text h4 {
+    font-size: 1.4em;
+  }
+
+  .gspace_feature_item {
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .gspace_feature_icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .gspace_feature_img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tablinks {
+    font-size: 0.85em;
+    padding: 8px 12px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
 }
 
 /* Google Space Features End */
