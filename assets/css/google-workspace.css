@@ -306,6 +306,9 @@ a {
 }
 
 @media screen and (max-width: 990px) {
+  #gspace_features {
+    padding: 60px 0;
+  }
   .gspace_feature_head h1 {
     font-size: 2em;
   }
@@ -345,6 +348,378 @@ a {
 }
 
 /* Google Space Features End */
+
+/* Google Space Pricing Plan Start */
+
+#gspace_plan {
+  padding-bottom: 100px;
+}
+
+.gspace_plan_head h1 {
+  font-family: var(--primary-font);
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.gspace_plan_head p {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  color: var(--dim-gray);
+  max-width: 800px;
+  margin: 30px auto 20px;
+}
+
+.gspace_price_card {
+  position: relative;
+  padding: 20px 15px;
+  border: 1px solid;
+  border-top-width: 10px;
+  margin-top: 30px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.gspace_price_card.sky {
+  border-color: #4285f4;
+}
+
+.gspace_price_card.red {
+  border-color: #ea4335;
+}
+
+.gspace_price_card.yellow {
+  border-color: #ffba00;
+}
+
+.gspace_price_card.green {
+  border-color: #49af62;
+}
+
+.gspace_price_card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.price_head h1 {
+  font-family: var(--primary-font);
+  font-size: 2.5em;
+  font-weight: 700;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.plan_price {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-size: 1.8em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.plan_price b {
+  font-weight: 700;
+}
+
+.plan_price span {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  vertical-align: super;
+}
+
+.plan_storage h4 {
+  font-family: var(--primary-font);
+  font-size: 1.4em;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-top: 40px;
+}
+
+.plan_storage_icon {
+  width: 35px;
+  height: 35px;
+  margin-top: 10px;
+}
+
+.plan_storage_icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.plan_communicate_text {
+  font-family: var(--primary-font);
+  font-size: 1.4em;
+  font-weight: 700;
+  color: var(--secondary-color);
+  padding-bottom: 15px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.plan_communicate_text img {
+  width: 18px;
+  margin-left: 20px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.plan_communicate_text.active img {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.plan_communicate_icons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.plan_communicate_icons.active {
+  display: none;
+}
+
+.plan_communicate_icons span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+.plan_communicate_icons span img {
+  width: 100%;
+  height: 100%;
+}
+
+.plan_communicate_items {
+  height: 0;
+  visibility: hidden;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  -o-transition: height 0.5s;
+}
+
+.plan_communicate_items.active {
+  height: 420px;
+  visibility: visible;
+}
+
+.plan_communicate_items li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.communicate_item_icon {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+}
+
+.communicate_item_icon img {
+  width: 100%;
+}
+
+.communicate_item_text span {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  color: var(--dim-gray);
+  font-weight: 500;
+}
+
+.plan_collaborate_text {
+  font-family: var(--primary-font);
+  font-size: 1.4em;
+  font-weight: 700;
+  color: var(--secondary-color);
+  padding-bottom: 15px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.plan_collaborate_text img {
+  width: 18px;
+  margin-left: 20px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.plan_collaborate_text.active img {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.plan_collaborate_icons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.plan_collaborate_icons.active {
+  display: none;
+}
+
+.plan_collaborate_icons span {
+  display: inline-block;
+  width: 30px;
+  height: 32px;
+}
+
+.plan_collaborate_icons span img {
+  width: 100%;
+  height: 100%;
+}
+
+.plan_collaborate_items {
+  height: 0;
+  visibility: hidden;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  -o-transition: height 0.5s;
+}
+
+.plan_collaborate_items.active {
+  height: 750px;
+  visibility: visible;
+}
+
+.plan_collaborate_items li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.collaborate_item_icon {
+  width: 24px;
+  height: 25px;
+  flex-shrink: 0;
+}
+
+.collaborate_item_icon img {
+  width: 100%;
+}
+
+.collaborate_item_text span {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  color: var(--dim-gray);
+  font-weight: 500;
+}
+
+.plan_control {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.plan_control h4 {
+  font-family: var(--primary-font);
+  font-size: 1.4em;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.control_item {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.control_item_icon {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+}
+
+.control_item_icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.control_item_text p {
+  font-family: var(--secondary-font);
+  color: var(--dim-gray);
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.plan_order_btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.plan_order_btn a {
+  display: inline-block;
+  white-space: nowrap;
+  font-family: var(--secondary-font);
+  color: var(--white);
+  font-size: 1.1em;
+  font-weight: 500;
+  padding: 10px 45px;
+  background: var(--secondary-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.plan_order_btn a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+@media screen and (max-width: 990px) {
+  #gspace_plan {
+    padding-bottom: 60px;
+  }
+
+  .gspace_plan_head h1 {
+    font-size: 2em;
+  }
+}
+
+/* Google Space Pricing Plan End */
 
 /* FAQ Start */
 
