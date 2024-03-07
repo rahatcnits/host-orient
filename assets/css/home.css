@@ -889,12 +889,17 @@ a {
   top: -15px;
   width: 7px;
   height: 7px;
+  animation: pulse 1s linear infinite;
+  -webkit-animation: pulse 1s linear infinite;
+  animation-delay: 0.5;
 }
 
 .dotted .dot::before {
   bottom: -22px;
   width: 14px;
   height: 14px;
+  animation: pulse 1s linear infinite forwards;
+  -webkit-animation: pulse 1s linear infinite forwards;
 }
 
 /* @keyframes pulse {
