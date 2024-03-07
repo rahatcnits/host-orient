@@ -510,18 +510,19 @@ a {
 }
 
 .plan_communicate_items {
-  height: 0;
+  max-height: 0;
   visibility: hidden;
-  transition: height 0.5s;
-  -webkit-transition: height 0.5s;
-  -moz-transition: height 0.5s;
-  -ms-transition: height 0.5s;
-  -o-transition: height 0.5s;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  -webkit-transition: max-height 0.2s ease-out;
+  -moz-transition: max-height 0.2s ease-out;
+  -ms-transition: max-height 0.2s ease-out;
+  -o-transition: max-height 0.2s ease-out;
 }
 
 .plan_communicate_items.active {
-  height: 420px;
   visibility: visible;
+  max-height: 480px;
 }
 
 .plan_communicate_items li {
@@ -577,10 +578,10 @@ a {
 
 .plan_collaborate_icons {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 5px;
+  column-gap: 5px;
   cursor: pointer;
+  height: 80px;
 }
 
 .plan_collaborate_icons.active {
@@ -599,17 +600,18 @@ a {
 }
 
 .plan_collaborate_items {
-  height: 0;
+  max-height: 0;
   visibility: hidden;
-  transition: height 0.5s;
-  -webkit-transition: height 0.5s;
-  -moz-transition: height 0.5s;
-  -ms-transition: height 0.5s;
-  -o-transition: height 0.5s;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  -webkit-transition: max-height 0.2s ease-out;
+  -moz-transition: max-height 0.2s ease-out;
+  -ms-transition: max-height 0.2s ease-out;
+  -o-transition: max-height 0.2s ease-out;
 }
 
 .plan_collaborate_items.active {
-  height: 750px;
+  max-height: 860px;
   visibility: visible;
 }
 
@@ -637,7 +639,7 @@ a {
 }
 
 .plan_control {
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 80px;
 }
 
