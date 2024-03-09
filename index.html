@@ -55,7 +55,9 @@
           <div class="topbar_content topbar_contact_items">
             <ul class="topbar_items">
               <li><a href="tel: +447479361314">+447479361314</a></li>
-              <li><a href="mailto: info@hostorient.com">info@hostorient.com</a></li>
+              <li>
+                <a href="mailto: info@hostorient.com">info@hostorient.com</a>
+              </li>
               <li><a href="#">Support</a></li>
             </ul>
           </div>
@@ -63,9 +65,14 @@
           <div class="topbar_content">
             <div class="topbar_btns">
               <div class="select_box">
-                <select name="" id="">
-                  <option value="USD">USD</option>
-                  <option value="BDT">BDT</option>
+                <select
+                  name="sources"
+                  id="sources"
+                  class="custom-select sources"
+                  placeholder="BD"
+                >
+                  <option value="profile">BD</option>
+                  <option value="word">US</option>
                 </select>
               </div>
 
@@ -91,35 +98,41 @@
           </div>
 
           <div class="header_items">
-            <div class="header_item">
-              <div class="header_item_icon">
-                <img src="./assets/img/icons/technical_icon.svg" alt="" />
+            <a href="tel: +447479361314">
+              <div class="header_item">
+                <div class="header_item_icon">
+                  <img src="./assets/img/icons/technical_icon.svg" alt="" />
+                </div>
+                <div class="header_item_content">
+                  <h4>Technical Help Line</h4>
+                  <p>+447479361314</p>
+                </div>
               </div>
-              <div class="header_item_content">
-                <h4>Technical Help Line</h4>
-                <p>+447479361314</p>
-              </div>
-            </div>
+            </a>
 
-            <div class="header_item">
-              <div class="header_item_icon">
-                <img src="./assets/img/icons/mail_support_icon.svg" alt="" />
+            <a href="mailto: support@hostorient.com">
+              <div class="header_item">
+                <div class="header_item_icon">
+                  <img src="./assets/img/icons/mail_support_icon.svg" alt="" />
+                </div>
+                <div class="header_item_content">
+                  <h4>Support</h4>
+                  <p>support@hostorient.com</p>
+                </div>
               </div>
-              <div class="header_item_content">
-                <h4>Support</h4>
-                <p>support@hostorient.com</p>
-              </div>
-            </div>
+            </a>
 
-            <div class="header_item">
-              <div class="header_item_icon">
-                <img src="./assets/img/icons/headset_icon.svg" alt="" />
+            <a href="tel: +447479361314">
+              <div class="header_item">
+                <div class="header_item_icon">
+                  <img src="./assets/img/icons/headset_icon.svg" alt="" />
+                </div>
+                <div class="header_item_content">
+                  <h4>Sales Support</h4>
+                  <p>+447479361314</p>
+                </div>
               </div>
-              <div class="header_item_content">
-                <h4>Sales Support</h4>
-                <p>+447479361314</p>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -140,9 +153,14 @@
 
           <!-- mobile select box -->
           <div class="select_box mobile_select_box">
-            <select name="" id="">
-              <option value="USD">USD</option>
-              <option value="BDT">BDT</option>
+            <select
+              name="sources"
+              id="sources"
+              class="custom-select sources"
+              placeholder="BD"
+            >
+              <option value="profile">BD</option>
+              <option value="word">US</option>
             </select>
           </div>
 
@@ -2584,7 +2602,9 @@
                         />
                       </svg>
                     </div>
-                    <a href="#">info@hostorient.com</a>
+                    <a href="mailto: info@hostorient.com"
+                      >info@hostorient.com</a
+                    >
                   </li>
 
                   <li>
@@ -2618,7 +2638,7 @@
                         />
                       </svg>
                     </div>
-                    <a href="#">+447479361314</a>
+                    <a href="tel: +447479361314">+447479361314</a>
                   </li>
                 </ul>
               </div>
@@ -2773,7 +2793,9 @@
                         />
                       </svg>
                     </div>
-                    <a href="#">info@hostorient.com</a>
+                    <a href="mailto: info@hostorient.com"
+                      >info@hostorient.com</a
+                    >
                   </li>
 
                   <li>
@@ -2807,7 +2829,7 @@
                         />
                       </svg>
                     </div>
-                    <a href="#">+447479361314</a>
+                    <a href="tel: +447479361314">+447479361314</a>
                   </li>
                 </ul>
               </div>
@@ -2849,6 +2871,7 @@
     <script src="./assets/js/navbar.js"></script>
     <script src="./assets/js/backToTop.js"></script>
     <script src="./assets/js/textEffect.js"></script>
+    <script src="./assets/js/select.js"></script>
 
     <!-- Bootstrap JS Link Start -->
     <script src="./assets/css/bootstrap/js/bootstrap.min.js"></script>
