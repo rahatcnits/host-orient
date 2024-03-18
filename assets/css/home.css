@@ -249,8 +249,9 @@ a {
 }
 
 .domain_item {
-  width: 100px;
+  min-width: 100px;
   aspect-ratio: 1/1;
+  padding: 0 15px;
   border: 1px solid #e6e7e8;
   display: flex;
   flex-direction: column;
@@ -449,6 +450,10 @@ a {
   font-size: 1.8em;
   font-weight: 700;
   text-align: center;
+}
+
+.plan_price div b {
+  font-weight: 700;
 }
 
 .plan_price div span {

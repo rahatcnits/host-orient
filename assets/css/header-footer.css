@@ -114,118 +114,39 @@ ul {
   color: var(--secondary-color);
 }
 
-.custom-select-wrapper {
-  position: relative;
-  display: inline-block;
-  user-select: none;
+.select_box select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 80px;
+  padding: 4px 25px 4px 15px;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  border: 1px solid var(--white);
+  color: var(--primary-color);
+  border-radius: 5px;
+  background-color: transparent;
+  background-image: url(../img/icons/chevran_down.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 50px 3px;
+  outline: none;
 }
-.custom-select-wrapper select {
+
+.select_box select::-ms-expand {
   display: none;
 }
-.custom-select {
-  position: relative;
-  display: inline-block;
-}
-.custom-select-trigger {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  width: 70px;
-  font-size: 16px;
-  padding: 3px 10px;
-  font-weight: 500;
-  font-family: var(--secondary-font);
-  color: var(--primary-color);
-  border: 1px solid var(--white);
-  border-radius: 4px;
-  cursor: pointer;
-}
-.custom-select-trigger:after {
-  display: block;
-  content: "";
-  width: 8px;
-  height: 8px;
-  margin-top: 10px;
-  margin-right: 0px;
-  border-bottom: 2px solid var(--white);
-  border-right: 2px solid var(--white);
-  transform: rotate(45deg) translateY(-50%);
-  transform-origin: 50% 0;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-}
-.custom-select.opened .custom-select-trigger:after {
-  margin-top: 13px;
-  transform: rotate(-135deg) translateY(-50%);
-}
-.custom-options {
-  position: absolute;
-  display: block;
-  top: 100%;
-  left: 0;
-  right: 0;
-  min-width: 100%;
-  margin: 8px 0;
-  border: 1px solid var(--primary-color);
-  border-radius: 4px;
-  box-sizing: border-box;
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07);
-  background: var(--white);
-  transition: all 0.4s ease-in-out;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: translateY(-15px);
-}
-.custom-select.opened .custom-options {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-  transform: translateY(0);
-}
-.custom-options:before {
-  position: absolute;
-  display: block;
-  content: "";
-  bottom: 100%;
-  right: 25px;
-  width: 7px;
-  height: 7px;
-  margin-bottom: -4px;
-  border-top: 1px solid var(--primary-color);
-  border-left: 1px solid var(--primary-color);
-  background: var(--white);
-  transform: rotate(45deg);
-  transition: all 0.4s ease-in-out;
-}
-.option-hover:before {
-  background: #f9f9f9;
-}
-.custom-option {
-  position: relative;
-  display: block;
-  padding: 0 15px;
-  border-bottom: 1px solid var(--primary-color);
+
+.select_box select option {
+  background-color: var(--white);
+  font-weight: 400;
   font-size: 1em;
-  font-weight: 500;
-  color: var(--secondary-color);
-  line-height: 35px;
-  cursor: pointer;
-  transition: all 0.4s ease-in-out;
 }
-.custom-option:first-of-type {
-  border-radius: 4px 4px 0 0;
-}
-.custom-option:last-of-type {
-  border-bottom: 0;
-  border-radius: 0 0 4px 4px;
-}
-.custom-option:hover,
-.custom-option.selection {
-  background: #f9f9f9;
+
+.selected {
+  display: none;
 }
 
 @media screen and (max-width: 990px) {
@@ -235,6 +156,10 @@ ul {
 
   .topbar_wrapper {
     justify-content: center;
+  }
+
+  .desktop_select_box {
+    display: none;
   }
 
   .topbar_contact_items {
@@ -479,19 +404,40 @@ ul {
   margin: auto;
 }
 
-.mobile_select_box .custom-select-trigger {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  width: 70px;
-  font-size: 16px;
-  padding: 3px 10px;
-  font-weight: 500;
+.mobile_select_box select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 80px;
+  padding: 4px 25px 4px 15px;
   font-family: var(--secondary-font);
-  color: var(--white);
-  border: 1px solid var(--white);
-  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1em;
   cursor: pointer;
+  border: 1px solid var(--white);
+  color: var(--white);
+  border-radius: 5px;
+  background-color: transparent;
+  background-image: url(../img/icons/chevran_down.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 50px 3px;
+  outline: none;
+}
+
+.mobile_select_box select::-ms-expand {
+  display: none;
+}
+
+.mobile_select_box select option {
+  background-color: var(--white);
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.selected {
+  display: none;
 }
 
 .mobile_select_box {

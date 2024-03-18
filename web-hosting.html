@@ -26,6 +26,22 @@
     <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.css" />
   </head>
   <body>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/6570e331bfb79148e59ad160/1hh0feup0";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+
     <!-- Back to Top Start -->
     <section id="bottom-top">
       <div class="bottom-to-top">
@@ -50,21 +66,24 @@
 
           <div class="topbar_content">
             <div class="topbar_btns">
-              <div class="select_box">
-                <select
-                  name="sources"
-                  id="sources"
-                  class="custom-select sources"
-                  placeholder="BD"
-                >
-                  <option value="profile">BD</option>
-                  <option value="word">US</option>
+              <div class="select_box desktop_select_box">
+                <select class="currencyToggle" onchange="changeCurrency()">
+                  <option value="USD" selected>USD</option>
+                  <option value="BDT">BDT</option>
                 </select>
               </div>
 
               <div>
-                <a href="#" class="topbar_btn login_btn">Login</a>
-                <a href="#" class="topbar_btn resister_btn">Registration</a>
+                <a
+                  href="https://hostorient.com/ap/index.php?rp=/login"
+                  class="topbar_btn login_btn"
+                  >Login</a
+                >
+                <a
+                  href="https://hostorient.com/ap/register.php"
+                  class="topbar_btn resister_btn"
+                  >Registration</a
+                >
               </div>
             </div>
           </div>
@@ -139,14 +158,9 @@
 
           <!-- mobile select box -->
           <div class="select_box mobile_select_box">
-            <select
-              name="sources"
-              id="sources"
-              class="custom-select sources"
-              placeholder="BD"
-            >
-              <option value="profile">BD</option>
-              <option value="word">US</option>
+            <select class="currencyTogglePhn" onchange="changeCurrencyPhn()">
+              <option value="USD" selected>USD</option>
+              <option value="BDT">BDT</option>
             </select>
           </div>
 
@@ -161,9 +175,7 @@
               </div>
               <ul class="menu-main">
                 <li class="menu-item-has-children">
-                  <a href="./pbx-phone.html"
-                    >Web Hosting <i class="fa fa-angle-down"></i
-                  ></a>
+                  <a href="#">Web Hosting <i class="fa fa-angle-down"></i></a>
                   <div class="sub-menu mega-menu mega-menu-column-4">
                     <div class="list-item">
                       <img
@@ -175,7 +187,7 @@
                     <div class="list-item">
                       <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/web-hosting">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -183,14 +195,14 @@
                               />
                             </div>
                             <div class="mega_menu_item">
-                              <h4>USA Virtual Private Server</h4>
+                              <h4>Web Hosting</h4>
                               <p>Plans Start at $6 per month!</p>
                             </div>
                           </a>
                         </li>
 
                         <li>
-                          <a href="#">
+                          <a href="/turbo-hosting">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -198,7 +210,7 @@
                               />
                             </div>
                             <div class="mega_menu_item">
-                              <h4>USA Virtual Private Server</h4>
+                              <h4>Turbo Hosting</h4>
                               <p>Plans Start at $6 per month!</p>
                             </div>
                           </a>
@@ -209,7 +221,7 @@
                     <div class="list-item">
                       <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/reseller-hosting">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -217,22 +229,7 @@
                               />
                             </div>
                             <div class="mega_menu_item">
-                              <h4>USA Virtual Private Server</h4>
-                              <p>Plans Start at $6 per month!</p>
-                            </div>
-                          </a>
-                        </li>
-
-                        <li>
-                          <a href="#">
-                            <div class="mega_menu_icon">
-                              <img
-                                src="./assets/img/navbar/mega_menu_icon.svg"
-                                alt=""
-                              />
-                            </div>
-                            <div class="mega_menu_item">
-                              <h4>USA Virtual Private Server</h4>
+                              <h4>Reseller Hosting</h4>
                               <p>Plans Start at $6 per month!</p>
                             </div>
                           </a>
@@ -257,7 +254,7 @@
                     <div class="list-item">
                       <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/bdix-web-hosting">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -265,14 +262,14 @@
                               />
                             </div>
                             <div class="mega_menu_item">
-                              <h4>USA Virtual Private Server</h4>
+                              <h4>BDIX Web Hosting</h4>
                               <p>Plans Start at $6 per month!</p>
                             </div>
                           </a>
                         </li>
 
                         <li>
-                          <a href="#">
+                          <a href="/bdix-turbo-hosting">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -280,7 +277,7 @@
                               />
                             </div>
                             <div class="mega_menu_item">
-                              <h4>USA Virtual Private Server</h4>
+                              <h4>BDIX Turbo Hosting</h4>
                               <p>Plans Start at $6 per month!</p>
                             </div>
                           </a>
@@ -291,7 +288,7 @@
                     <div class="list-item">
                       <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/bdix-reseller-hosting">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -299,22 +296,7 @@
                               />
                             </div>
                             <div class="mega_menu_item">
-                              <h4>USA Virtual Private Server</h4>
-                              <p>Plans Start at $6 per month!</p>
-                            </div>
-                          </a>
-                        </li>
-
-                        <li>
-                          <a href="#">
-                            <div class="mega_menu_icon">
-                              <img
-                                src="./assets/img/navbar/mega_menu_icon.svg"
-                                alt=""
-                              />
-                            </div>
-                            <div class="mega_menu_item">
-                              <h4>USA Virtual Private Server</h4>
+                              <h4>BDIX Reseller Hosting</h4>
                               <p>Plans Start at $6 per month!</p>
                             </div>
                           </a>
@@ -325,7 +307,7 @@
                 </li>
 
                 <li class="menu-item-has-children">
-                  <a href="./private-server.html"
+                  <a href="#"
                     >Virtual Private Server <i class="fa fa-angle-down"></i
                   ></a>
                   <div class="sub-menu mega-menu mega-menu-column-4">
@@ -339,7 +321,7 @@
                     <div class="list-item">
                       <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/usa-virtual-private-server">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -352,9 +334,13 @@
                             </div>
                           </a>
                         </li>
+                      </ul>
+                    </div>
 
+                    <div class="list-item">
+                      <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/bdix-virtual-private-server">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -387,7 +373,7 @@
                     <div class="list-item">
                       <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/dedicated-server">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -395,22 +381,7 @@
                               />
                             </div>
                             <div class="mega_menu_item">
-                              <h4>USA Virtual Private Server</h4>
-                              <p>Plans Start at $6 per month!</p>
-                            </div>
-                          </a>
-                        </li>
-
-                        <li>
-                          <a href="#">
-                            <div class="mega_menu_icon">
-                              <img
-                                src="./assets/img/navbar/mega_menu_icon.svg"
-                                alt=""
-                              />
-                            </div>
-                            <div class="mega_menu_item">
-                              <h4>USA Virtual Private Server</h4>
+                              <h4>Dedicated Server</h4>
                               <p>Plans Start at $6 per month!</p>
                             </div>
                           </a>
@@ -421,7 +392,7 @@
                     <div class="list-item">
                       <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/usa-dedicated-server">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -429,22 +400,7 @@
                               />
                             </div>
                             <div class="mega_menu_item">
-                              <h4>USA Virtual Private Server</h4>
-                              <p>Plans Start at $6 per month!</p>
-                            </div>
-                          </a>
-                        </li>
-
-                        <li>
-                          <a href="#">
-                            <div class="mega_menu_icon">
-                              <img
-                                src="./assets/img/navbar/mega_menu_icon.svg"
-                                alt=""
-                              />
-                            </div>
-                            <div class="mega_menu_item">
-                              <h4>USA Virtual Private Server</h4>
+                              <h4>USA Dedicated Server</h4>
                               <p>Plans Start at $6 per month!</p>
                             </div>
                           </a>
@@ -455,9 +411,7 @@
                 </li>
 
                 <li class="menu-item-has-children">
-                  <a href="./email-server.html"
-                    >Email Service <i class="fa fa-angle-down"></i
-                  ></a>
+                  <a href="#">Email Service <i class="fa fa-angle-down"></i></a>
                   <div class="sub-menu mega-menu mega-menu-column-4">
                     <div class="list-item">
                       <img
@@ -469,7 +423,7 @@
                     <div class="list-item">
                       <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/dedicated-email-server">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon_2.svg"
@@ -484,7 +438,7 @@
                         </li>
 
                         <li>
-                          <a href="#">
+                          <a href="./google-workspace">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon_2.svg"
@@ -503,7 +457,7 @@
                     <div class="list-item">
                       <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/outlook-mail">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon_2.svg"
@@ -521,13 +475,51 @@
                   </div>
                 </li>
 
-                <li>
-                  <a href="#">Other Services</a>
+                <li class="menu-item-has-children">
+                  <a href="#"
+                    >Other Services <i class="fa fa-angle-down"></i
+                  ></a>
+                  <div class="sub-menu mega-menu mega-menu-column-4">
+                    <div class="list-item">
+                      <img
+                        src="./assets/img/navbar/mega_menu_img_2.svg"
+                        alt="shop"
+                        class="mega_menu_img"
+                      />
+                    </div>
+                    <div class="list-item">
+                      <ul class="mega_menu_items">
+                        <li>
+                          <a href="/dedicated-email-server">
+                            <div class="mega_menu_icon">
+                              <img
+                                src="./assets/img/navbar/mega_menu_icon_2.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="mega_menu_item">
+                              <h4>IP PBX</h4>
+                              <p>Plans Start at $45 per month!</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </li>
 
                 <div class="mobile_user_btn">
-                  <a href="#" class="topbar_btn login_btn">Login</a> <br />
-                  <a href="#" class="topbar_btn resister_btn">Registration</a>
+                  <a
+                    href="https://hostorient.com/ap/index.php?rp=/login"
+                    class="topbar_btn login_btn"
+                    >Login</a
+                  >
+                  <br />
+                  <a
+                    href="https://hostorient.com/ap/register.php"
+                    class="topbar_btn resister_btn"
+                    >Registration</a
+                  >
                 </div>
               </ul>
             </nav>

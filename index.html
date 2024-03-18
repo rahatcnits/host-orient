@@ -80,14 +80,8 @@
 
           <div class="topbar_content">
             <div class="topbar_btns">
-              <div class="select_box">
-                <select
-                  name="sources"
-                  id="currencyToggle"
-                  class="custom-select sources"
-                  placeholder="USD"
-                  onchange="changeCurrency()"
-                >
+              <div class="select_box desktop_select_box">
+                <select class="currencyToggle" onchange="changeCurrency()">
                   <option value="USD" selected>USD</option>
                   <option value="BDT">BDT</option>
                 </select>
@@ -178,14 +172,9 @@
 
           <!-- mobile select box -->
           <div class="select_box mobile_select_box">
-            <select
-              name="sources"
-              id="sources"
-              class="custom-select sources"
-              placeholder="USD"
-            >
-              <option value="profile">BDT</option>
-              <option value="word">USD</option>
+            <select class="currencyTogglePhn" onchange="changeCurrencyPhn()">
+              <option value="USD" selected>USD</option>
+              <option value="BDT">BDT</option>
             </select>
           </div>
 
@@ -227,7 +216,7 @@
                         </li>
 
                         <li>
-                          <a href="#">
+                          <a href="/turbo-hosting">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -246,7 +235,7 @@
                     <div class="list-item">
                       <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/reseller-hosting">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -279,7 +268,7 @@
                     <div class="list-item">
                       <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/bdix-web-hosting">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -294,7 +283,7 @@
                         </li>
 
                         <li>
-                          <a href="#">
+                          <a href="/bdix-turbo-hosting">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -313,7 +302,7 @@
                     <div class="list-item">
                       <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/bdix-reseller-hosting">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -346,7 +335,7 @@
                     <div class="list-item">
                       <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/usa-virtual-private-server">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -359,9 +348,13 @@
                             </div>
                           </a>
                         </li>
+                      </ul>
+                    </div>
 
+                    <div class="list-item">
+                      <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/bdix-virtual-private-server">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -394,7 +387,7 @@
                     <div class="list-item">
                       <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/dedicated-server">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -407,9 +400,13 @@
                             </div>
                           </a>
                         </li>
+                      </ul>
+                    </div>
 
+                    <div class="list-item">
+                      <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/usa-dedicated-server">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon.svg"
@@ -440,7 +437,7 @@
                     <div class="list-item">
                       <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/dedicated-email-server">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon_2.svg"
@@ -455,7 +452,7 @@
                         </li>
 
                         <li>
-                          <a href="./google-workspace.html">
+                          <a href="./google-workspace">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon_2.svg"
@@ -474,7 +471,7 @@
                     <div class="list-item">
                       <ul class="mega_menu_items">
                         <li>
-                          <a href="#">
+                          <a href="/outlook-mail">
                             <div class="mega_menu_icon">
                               <img
                                 src="./assets/img/navbar/mega_menu_icon_2.svg"
@@ -492,8 +489,37 @@
                   </div>
                 </li>
 
-                <li>
-                  <a href="#">Other Services</a>
+                <li class="menu-item-has-children">
+                  <a href="#"
+                    >Other Services <i class="fa fa-angle-down"></i
+                  ></a>
+                  <div class="sub-menu mega-menu mega-menu-column-4">
+                    <div class="list-item">
+                      <img
+                        src="./assets/img/navbar/mega_menu_img_2.svg"
+                        alt="shop"
+                        class="mega_menu_img"
+                      />
+                    </div>
+                    <div class="list-item">
+                      <ul class="mega_menu_items">
+                        <li>
+                          <a href="/dedicated-email-server">
+                            <div class="mega_menu_icon">
+                              <img
+                                src="./assets/img/navbar/mega_menu_icon_2.svg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="mega_menu_item">
+                              <h4>IP PBX</h4>
+                              <p>Plans Start at $45 per month!</p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </li>
 
                 <div class="mobile_user_btn">
@@ -617,19 +643,19 @@
                 <p class="price"></p>
               </div>
 
-              <div class="domain_item">
+              <div class="domain_item product" data-price-usd="12.99">
                 <h4>.org</h4>
-                <p>$12.99</p>
+                <p class="price"></p>
               </div>
 
-              <div class="domain_item">
+              <div class="domain_item product" data-price-usd="12.99">
                 <h4>.club</h4>
-                <p>$12.99</p>
+                <p class="price"></p>
               </div>
 
-              <div class="domain_item">
+              <div class="domain_item product" data-price-usd="12.99">
                 <h4>.info</h4>
-                <p>$12.99</p>
+                <p class="price"></p>
               </div>
             </div>
           </div>
@@ -669,9 +695,9 @@
                   package.
                 </p>
 
-                <div class="plan_price">
+                <div class="plan_price product" data-price-usd="2.99">
                   <p>Starting at</p>
-                  <div>$2.99 <span>/mo*</span></div>
+                  <div><b class="price">$2.99</b> <span>/mo*</span></div>
                 </div>
 
                 <div class="pricing_plan_btn">
@@ -699,9 +725,9 @@
                   package.
                 </p>
 
-                <div class="plan_price">
+                <div class="plan_price product" data-price-usd="6.00">
                   <p>Starting at</p>
-                  <div>$6.00 <span>/mo*</span></div>
+                  <div><b class="price">$6.00</b> <span>/mo*</span></div>
                 </div>
 
                 <div class="pricing_plan_btn">
@@ -729,9 +755,9 @@
                   package.
                 </p>
 
-                <div class="plan_price">
+                <div class="plan_price product" data-price-usd="39.99">
                   <p>Starting at</p>
-                  <div>$39.99 <span>/mo*</span></div>
+                  <div><b class="price">$39.99</b> <span>/mo*</span></div>
                 </div>
 
                 <div class="pricing_plan_btn">
@@ -759,9 +785,9 @@
                   package.
                 </p>
 
-                <div class="plan_price">
+                <div class="plan_price product" data-price-usd="49.99">
                   <p>Starting at</p>
-                  <div>$49.99 <span>/mo*</span></div>
+                  <div><b class="price">$49.99</b> <span>/mo*</span></div>
                 </div>
 
                 <div class="pricing_plan_btn">
@@ -2837,7 +2863,6 @@
     <script src="./assets/js/navbar.js"></script>
     <script src="./assets/js/backToTop.js"></script>
     <script src="./assets/js/textEffect.js"></script>
-    <script src="./assets/js/select.js"></script>
     <script src="./assets/js/currency.js"></script>
 
     <!-- Bootstrap JS Link Start -->
