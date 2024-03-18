@@ -850,7 +850,27 @@ a {
 .dotted .dot {
   position: absolute;
   display: block;
-  bottom: -40px;
+  bottom: -25px;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.dotted .dot::after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
   left: 50%;
   width: 10px;
   height: 10px;
@@ -867,11 +887,13 @@ a {
   -o-transform: translateX(-50%);
 }
 
-.dotted .dot::after,
 .dotted .dot::before {
   content: "";
   position: absolute;
+  bottom: -40px;
   left: 50%;
+  width: 14px;
+  height: 14px;
   background: var(--primary-color);
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -884,40 +906,6 @@ a {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
 }
-
-.dotted .dot::after {
-  top: -15px;
-  width: 7px;
-  height: 7px;
-  animation: pulse 1s linear infinite;
-  -webkit-animation: pulse 1s linear infinite;
-  animation-delay: 0.5;
-}
-
-.dotted .dot::before {
-  bottom: -22px;
-  width: 14px;
-  height: 14px;
-  animation: pulse 1s linear infinite forwards;
-  -webkit-animation: pulse 1s linear infinite forwards;
-}
-
-/* @keyframes pulse {
-  0% {
-    transform: translateX(-50%) scale(0.5);
-    -webkit-transform: translateX(-50%) scale(0.5);
-    -moz-transform: translateX(-50%) scale(0.5);
-    -ms-transform: translateX(-50%) scale(0.5);
-    -o-transform: translateX(-50%) scale(0.5);
-  }
-  100% {
-    transform: translateX(-50%) scale(1);
-    -webkit-transform: translateX(-50%) scale(1);
-    -moz-transform: translateX(-50%) scale(1);
-    -ms-transform: translateX(-50%) scale(1);
-    -o-transform: translateX(-50%) scale(1);
-  }
-} */
 
 .country_icon:hover .datacenter_tooltip {
   opacity: 1;

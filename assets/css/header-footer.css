@@ -375,7 +375,10 @@ ul {
 .main_navbar {
   display: block;
   width: 100%;
-  position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 99;
   background: var(--primary-color);
 }
