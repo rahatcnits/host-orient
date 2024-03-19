@@ -3,7 +3,6 @@ const exchangeRate = 100; // 1 USD = 100 BDT
 
 function changeCurrency() {
   const selectedCurrency = document.querySelector(".currencyToggle").value;
-  console.log(selectedCurrency);
   const products = document.querySelectorAll(".product");
 
   products.forEach((product) => {
@@ -25,7 +24,6 @@ document.addEventListener("DOMContentLoaded", changeCurrency);
 
 function changeCurrencyPhn() {
   const selectedCurrency = document.querySelector(".currencyTogglePhn").value;
-  console.log(selectedCurrency);
   const products = document.querySelectorAll(".product");
 
   products.forEach((product) => {

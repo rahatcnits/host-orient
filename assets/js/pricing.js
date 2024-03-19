@@ -5,6 +5,9 @@ const priceAnnual = document.querySelector(".annually");
 const planPrices = document.querySelectorAll(".plan_price b");
 const planPeriods = document.querySelectorAll(".plan_price span");
 
+// const selectedCurrency = document.querySelector(".currencyToggle").value;
+// let dollarRate = 100;
+
 function allData() {
   let getData = [];
   planPrices.forEach((planPrice) => {
@@ -36,7 +39,7 @@ checkbox.addEventListener("click", () => {
     let planYearPrices = calcMonthToYearPrice();
     for (let i = 0; i < planYearPrices.length; i++) {
       planPrices.forEach((planPrice) => {
-        planPrice.textContent = planYearPrices[i];
+        planPrice.textContent = `$${planYearPrices[i]}`;
       });
     }
     planPeriods.forEach((planPeriod) => {
@@ -49,7 +52,7 @@ checkbox.addEventListener("click", () => {
     let monthPrice = allData();
     for (let i = 0; i < monthPrice.length; i++) {
       planPrices.forEach((planPrice) => {
-        planPrice.textContent = monthPrice[i];
+        planPrice.textContent = `$${monthPrice[i]}`;
       });
     }
     planPeriods.forEach((planPeriod) => {

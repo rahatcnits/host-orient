@@ -156,6 +156,88 @@ a {
   margin: 30px auto 20px;
 }
 
+.price_toggle_btn {
+  max-width: 350px;
+  margin: 10px auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price_toggle_text {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--dim-gray);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.price_toggle_text.active {
+  color: var(--primary-color);
+}
+
+#toggle_checkbox {
+  display: none;
+}
+
+.price_toggle_btn label {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 28px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.price_toggle_btn label:before {
+  top: 4px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary-color);
+  background: var(--primary-color);
+}
+
+.price_toggle_btn label:after {
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 28px;
+  border: 2px solid var(--primary-color);
+}
+
+.price_toggle_btn label:before,
+.price_toggle_btn label:after {
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  box-sizing: border-box;
+  transition: 0.5s ease top, 0.5s ease left, 0.5s ease right, 0.5s ease width,
+    0.5s ease height, 0.5s ease border-color, 0.5s ease background;
+}
+
+#toggle_checkbox:checked + label:before {
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 28px;
+  border-color: var(--primary-color);
+  background: var(--white);
+}
+
+#toggle_checkbox:checked + label:after {
+  top: 4px;
+  right: 8px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary-color);
+  background: var(--primary-color);
+}
+
 .pricing_card {
   border: 1px solid #e6e7e8;
   padding: 20px;
@@ -298,49 +380,333 @@ a {
 
 /* Pricing Plan End */
 
-/* Zimbra Start */
+/* Cloud Linux Start */
 
-#zimbra {
-  padding: 100px 0;
-  background: rgba(73, 175, 98, 0.3);
+#cloud_linux {
+  padding: 40px 0 100px;
 }
 
-.zimbra_img img {
+.cloud_linux_wrapper {
+  background: url(../img/web-hosting/cloud_linux_bg.svg);
   width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 30px 0;
 }
 
-.zimbra_content h2 {
+.cloud_linux_img img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.cloud_linux_card {
+  border: 1px solid #e6e7e8;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  margin-top: 24px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.cloud_linux_card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.cloud_linux_card h4 {
   font-family: var(--primary-font);
+  font-size: 1.4em;
+  color: var(--secondary-color);
+  font-weight: 600;
+  text-align: center;
+}
+
+.cloud_linux_card ul li {
+  font-family: var(--secondary-font);
+  color: var(--dim-gray);
+  font-size: 1em;
+  text-align: center;
+  font-weight: 500;
+  padding: 15px 0;
+  border-bottom: 1px solid #e6e7e8;
+}
+
+.cloud_linux_card ul li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.cloud_linux_card ul li span {
+  font-weight: 600;
+}
+
+.cloud_linux_content h1 {
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cloud_linux_content h4 {
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
   font-size: 2em;
   font-weight: 700;
-  color: var(--secondary-color);
   margin-bottom: 30px;
 }
 
-.zimbra_content p {
+.cloud_linux_content h4 span {
+  color: var(--primary-color);
+}
+
+.cloud_linux_content p {
+  font-family: var(--secondary-font);
+  color: var(--dim-gray);
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 990px) {
+  #cloud_linux {
+    padding: 40px 0 60px;
+  }
+
+  .cloud_linux_img img {
+    display: none;
+  }
+
+  .cloud_linux_content h1 {
+    font-size: 2em;
+  }
+
+  .cloud_linux_content h4 {
+    font-size: 1.6em;
+  }
+}
+
+/* Cloud Linux End */
+
+/* Hosting Feature Start */
+
+#hosting_feature {
+  padding: 80px 0;
+  background: rgba(73, 175, 98, 0.3);
+  background-image: url(../img/home/hosting_feature_img.svg);
+  background-repeat: no-repeat;
+  background-position: 15% 75%;
+}
+
+.hosting_feature_head h1 {
+  font-family: var(--primary-font);
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.hosting_feature_head p {
   font-family: var(--secondary-font);
   font-size: 1em;
   font-weight: 500;
+  max-width: 600px;
+  margin: 30px auto 50px;
+  text-align: center;
+  color: var(--dim-gray);
+}
+
+.hosting_feature_item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  background: var(--light-green);
+  margin: 20px 0;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.hosting_feature_item_icon {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.hosting_feature_item_icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.hosting_feature_item_content h4 {
+  font-family: var(--primary-font);
+  font-size: 1.8em;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.hosting_feature_item_content p {
+  font-family: var(--primary-font);
+  font-size: 1em;
   color: var(--dim-gray);
   margin-bottom: 0;
 }
 
-.zimbra_content p span {
-  font-size: 1.2em;
-  font-weight: 700;
+.hosting_feature_btn {
+  margin-top: 10px;
+}
+
+.hosting_feature_btn a {
+  display: inline-block;
+  font-family: var(--secondary-font);
+  font-size: 1.1em;
+  color: var(--secondary-color);
+  font-weight: 500;
+  padding: 10px 40px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.hosting_feature_btn a:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 @media screen and (max-width: 990px) {
-  #zimbra {
+  #hosting_feature {
     padding: 60px 0;
   }
 
-  .zimbra_img {
-    display: none;
+  #hosting_feature {
+    background-image: none;
+  }
+
+  .hosting_feature_head h1 {
+    font-size: 2em;
   }
 }
 
-/* Zimbra End */
+@media screen and (max-width: 576px) {
+  .hosting_feature_item {
+    display: block;
+    padding: 20px;
+  }
+
+  .hosting_feature_item_icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+  }
+
+  .hosting_feature_item_content h4 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .hosting_feature_item_content p {
+    text-align: center;
+  }
+
+  .hosting_feature_btn {
+    text-align: center;
+  }
+}
+
+/* Hosting Feature End */
+
+/* Advanced Feature Start */
+
+#advanced_feature {
+  padding: 100px 0 0;
+}
+
+.advanced_feature_head h1 {
+  font-family: var(--primary-font);
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.advanced_feature_head p {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  color: var(--dim-gray);
+  max-width: 900px;
+  margin: 30px auto 0;
+}
+
+.advanced_feature_card {
+  margin-top: 30px;
+}
+
+.advanced_feature_card ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 0;
+}
+
+.advanced_feature_card ul li:last-child {
+  padding-bottom: 0;
+}
+
+.advanced_feature_icon {
+  width: 20px;
+  height: 20px;
+  line-height: 10px;
+}
+
+.advanced_feature_icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.advanced_feature_card ul li span {
+  font-family: var(--secondary-font);
+  color: var(--dim-gray);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 990px) {
+  #advanced_feature {
+    padding: 60px 0 0;
+  }
+
+  .advanced_feature_head h1 {
+    font-size: 2em;
+  }
+}
+
+/* Advanced Feature End */
 
 /* Feature Start */
 
@@ -417,12 +783,12 @@ a {
 }
 
 @media screen and (max-width: 990px) {
-  #feature {
-    padding: 60px 0;
-  }
-
   .feature_head h1 {
     font-size: 2em;
+  }
+
+  #feature {
+    padding: 60px 0;
   }
 }
 

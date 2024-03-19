@@ -194,6 +194,10 @@ a {
   text-align: center;
 }
 
+.plan_price b {
+  font-weight: 700;
+}
+
 .plan_price span {
   display: inline-block;
   font-size: 18px;
