@@ -5,8 +5,9 @@ const priceAnnual = document.querySelector(".annually");
 const planPrices = document.querySelectorAll(".plan_price b");
 const planPeriods = document.querySelectorAll(".plan_price span");
 
-// const selectedCurrency = document.querySelector(".currencyToggle").value;
-// let dollarRate = 100;
+const selectedCurrency = document.querySelector(".currencyToggle");
+const selectedCurrencyPhn = document.querySelector(".currencyTogglePhn");
+let dollarRate = 100;
 
 function allData() {
   let getData = [];
@@ -31,32 +32,85 @@ function calcMonthToYearPrice() {
   return sumData;
 }
 
-checkbox.addEventListener("click", () => {
-  if (checkbox.checked) {
-    priceMonth.classList.remove("active");
-    priceAnnual.classList.add("active");
+function usdPrice() {
+  checkbox.addEventListener("click", () => {
+    if (checkbox.checked) {
+      priceMonth.classList.remove("active");
+      priceAnnual.classList.add("active");
 
-    let planYearPrices = calcMonthToYearPrice();
-    for (let i = 0; i < planYearPrices.length; i++) {
-      planPrices.forEach((planPrice) => {
-        planPrice.textContent = `$${planYearPrices[i]}`;
+      let planYearPrices = calcMonthToYearPrice();
+      for (let i = 0; i < planYearPrices.length; i++) {
+        planPrices.forEach((planPrice) => {
+          planPrice.textContent = `$${planYearPrices[i]}`;
+        });
+      }
+      planPeriods.forEach((planPeriod) => {
+        planPeriod.textContent = "/year*";
+      });
+    } else {
+      priceAnnual.classList.remove("active");
+      priceMonth.classList.add("active");
+
+      let monthPrice = allData();
+      for (let i = 0; i < monthPrice.length; i++) {
+        planPrices.forEach((planPrice) => {
+          planPrice.textContent = `$${monthPrice[i]}`;
+        });
+      }
+      planPeriods.forEach((planPeriod) => {
+        planPeriod.textContent = "/mo*";
       });
     }
-    planPeriods.forEach((planPeriod) => {
-      planPeriod.textContent = "/year*";
-    });
+  });
+}
+
+function bdtPrice() {
+  checkbox.addEventListener("click", () => {
+    if (checkbox.checked) {
+      priceMonth.classList.remove("active");
+      priceAnnual.classList.add("active");
+
+      let planYearPrices = calcMonthToYearPrice();
+      for (let i = 0; i < planYearPrices.length; i++) {
+        planPrices.forEach((planPrice) => {
+          planPrice.textContent = `৳${planYearPrices[i] * dollarRate}`;
+        });
+      }
+      planPeriods.forEach((planPeriod) => {
+        planPeriod.textContent = "/year*";
+      });
+    } else {
+      priceAnnual.classList.remove("active");
+      priceMonth.classList.add("active");
+
+      let monthPrice = allData();
+      for (let i = 0; i < monthPrice.length; i++) {
+        planPrices.forEach((planPrice) => {
+          planPrice.textContent = `৳${monthPrice[i] * dollarRate}`;
+        });
+      }
+      planPeriods.forEach((planPeriod) => {
+        planPeriod.textContent = "/mo*";
+      });
+    }
+  });
+}
+
+usdPrice();
+
+selectedCurrency.addEventListener("change", () => {
+  if (selectedCurrency.value === "USD") {
+    usdPrice();
   } else {
-    priceAnnual.classList.remove("active");
-    priceMonth.classList.add("active");
+    bdtPrice();
+  }
+});
 
-    let monthPrice = allData();
-    for (let i = 0; i < monthPrice.length; i++) {
-      planPrices.forEach((planPrice) => {
-        planPrice.textContent = `$${monthPrice[i]}`;
-      });
-    }
-    planPeriods.forEach((planPeriod) => {
-      planPeriod.textContent = "/mo*";
-    });
+selectedCurrencyPhn.addEventListener("change", () => {
+  console.log(selectedCurrency.value);
+  if (selectedCurrency.value === "USD") {
+    usdPrice();
+  } else {
+    bdtPrice();
   }
 });
