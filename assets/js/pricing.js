@@ -107,8 +107,7 @@ selectedCurrency.addEventListener("change", () => {
 });
 
 selectedCurrencyPhn.addEventListener("change", () => {
-  console.log(selectedCurrency.value);
-  if (selectedCurrency.value === "USD") {
+  if (selectedCurrencyPhn.value === "USD") {
     usdPrice();
   } else {
     bdtPrice();
