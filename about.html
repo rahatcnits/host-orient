@@ -25,6 +25,12 @@
     <!-- Font Awesome CSS Link -->
     <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.css" />
 
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- Owl Carousel CSS -->
     <link
       rel="stylesheet"
@@ -554,11 +560,24 @@
     <!-- Hero Start -->
     <section id="hero">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
+        <div class="row d-flex align-items-center justify-content-between">
+          <div class="col-lg-7 col-xl-6">
             <div class="hero_content">
-              <h1>About Us</h1>
-              <p>We're on a mission to simplify cloud computing.</p>
+              <h1>About <span>Us</span></h1>
+
+              <p>
+                We understand that your online presence is essential for your
+                success. That's why we offer top-notch hosting solutions
+                tailored to meet your specific needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="hero_content">
+              <div class="hero_img">
+                <img src="./assets/img/about/hero.svg" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -569,33 +588,66 @@
     <!-- About Start -->
     <section id="about">
       <div class="container">
-        <div class="row d-flex align-items-center">
-          <div class="col-lg-6">
-            <div class="about_content">
-              <h1>Our History</h1>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Delectus ratione modi possimus, sunt autem laudantium ipsam quod
-                illum ipsa cum voluptatibus natus numquam eveniet molestiae
-                accusamus sapiente facilis blanditiis dicta nulla officiis ab!
-                Quibusdam quidem mollitia reprehenderit laborum aspernatur quae.
-                Odio deserunt ex quam velit incidunt? Nihil sint ducimus illum
-                modi dolores, minus vel beatae at, voluptas incidunt, officia
-                porro expedita veritatis dolorum ratione saepe laudantium odit
-                tempora quidem debitis sed earum cupiditate ipsam? Dolores
-                libero vitae in culpa officiis!
-              </p>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="about_head">
+              <h1>About HostOrient?</h1>
+              <p>Ready to take your online presence to the next level?</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-6">
-            <div class="about_content">
-              <div class="about_img">
-                <img
-                  src="./assets/img/about/about_img.svg"
-                  alt=""
-                  loading="lazy"
-                />
+        <div class="about_wrapper">
+          <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-lg-5">
+              <div class="about_content">
+                <div class="about_img">
+                  <img
+                    src="./assets/img/about/about_img_1.svg"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="about_content">
+                <h1>Find Your Online Success With HostOrient</h1>
+                <p>
+                  We're dedicated to empowering businesses and individuals with
+                  reliable, high-performance hosting solutions. With a focus on
+                  innovation, security, and customer satisfaction, we strive to
+                  be your trusted partner in the digital world.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about_wrapper">
+          <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-lg-5">
+              <div class="about_content">
+                <h1>Globally Recognized Web Host</h1>
+                <p>
+                  We're not just another web hosting provider - we're a globally
+                  recognized leader in the industry, committed to delivering
+                  unparalleled performance, reliability, and support to
+                  businesses and individuals worldwide.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="about_content">
+                <div class="about_img">
+                  <img
+                    src="./assets/img/about/about_img_2.svg"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -604,237 +656,125 @@
     </section>
     <!-- About End -->
 
-    <!-- Hosting Feature Start -->
-    <section id="hosting_feature">
+    <!-- Roadmap Start -->
+    <section id="roadmap">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <div class="hosting_feature_head">
-              <h1>World Class Best Hosting Feature For You</h1>
-              <p>
-                Experience unparalleled hosting excellence with our world-class
-                features tailored just for you.
-              </p>
+            <div class="testimonial_head">
+              <h1>Our Clients Love Us</h1>
+              <p>What our clients say</p>
             </div>
           </div>
         </div>
 
-        <div class="row d-flex justify-content-end">
-          <div class="col-lg-6">
-            <div class="hosting_feature_items">
-              <div class="hosting_feature_item">
-                <div class="hosting_feature_item_icon">
-                  <svg
-                    width="100"
-                    height="101"
-                    viewBox="0 0 100 101"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x="0.5"
-                      y="1.28345"
-                      width="99"
-                      height="99"
-                      rx="11.5"
-                      fill="#E4F3E8"
-                    />
-                    <rect
-                      x="0.5"
-                      y="1.28345"
-                      width="99"
-                      height="99"
-                      rx="11.5"
-                      stroke="#49AF62"
-                    />
-                    <path
-                      d="M88.2871 79.592C88.8394 79.592 89.2871 80.0398 89.2871 80.592V82.4983C89.2871 83.0506 88.8394 83.4983 88.2871 83.4983H29.3457C28.4277 87.7366 24.6484 90.9202 20.1367 90.9202C14.9414 90.9202 10.7129 86.6917 10.7129 81.4963C10.7129 76.301 14.9414 72.0725 20.1367 72.0725C24.6777 72.0725 28.4863 75.3049 29.3652 79.592H88.2871Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M88.2871 48.8303C88.8394 48.8303 89.2871 49.278 89.2871 49.8303V51.7366C89.2871 52.2889 88.8394 52.7366 88.2871 52.7366H75.4297C74.5313 56.9944 70.7324 60.2073 66.2109 60.2073C61.6895 60.2073 57.8906 57.0042 56.9922 52.7366H13.1387C12.5864 52.7366 12.1387 52.2889 12.1387 51.7366V49.8303C12.1387 49.278 12.5864 48.8303 13.1387 48.8303H56.9922C57.8906 44.5725 61.6895 41.3596 66.2109 41.3596C70.7324 41.3596 74.5313 44.5627 75.4297 48.8303H88.2871Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M88.2871 18.0686C88.8394 18.0686 89.2871 18.5163 89.2871 19.0686V20.9749C89.2871 21.5271 88.8394 21.9749 88.2871 21.9749H46.123C45.2441 26.262 41.4355 29.4944 36.8945 29.4944C32.3535 29.4944 28.5547 26.262 27.666 21.9749H13.1387C12.5864 21.9749 12.1387 21.5271 12.1387 20.9749V19.0686C12.1387 18.5163 12.5864 18.0686 13.1387 18.0686H27.6855C28.6035 13.8303 32.3828 10.6467 36.8945 10.6467C41.4062 10.6467 45.1855 13.8303 46.1035 18.0686H88.2871Z"
-                      fill="#49AF62"
-                    />
-                  </svg>
-                </div>
-                <div class="hosting_feature_item_content">
-                  <h4>cPanel Control Panel</h4>
+        <div class="row">
+          <div class="swiper roadmapSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="roadmap_card">
+                  <h1>2021</h1>
                   <p>
-                    We strive to provide top rare reliability and affordability
-                    that most shared hosting will bring quality.
+                    HostOrient became the fastest-growing web hosting company.
                   </p>
                 </div>
               </div>
 
-              <div class="hosting_feature_item">
-                <div class="hosting_feature_item_icon">
-                  <svg
-                    width="100"
-                    height="101"
-                    viewBox="0 0 100 101"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x="0.5"
-                      y="1.28345"
-                      width="99.0001"
-                      height="99"
-                      rx="11.5"
-                      fill="#E4F3E8"
-                    />
-                    <rect
-                      x="0.5"
-                      y="1.28345"
-                      width="99.0001"
-                      height="99"
-                      rx="11.5"
-                      stroke="#49AF62"
-                    />
-                    <path
-                      d="M14.0001 15.712V27.5692C14.0001 27.5692 14.1788 33.4977 20.0001 33.4977C25.8214 33.4977 74.1055 33.4977 80 33.4977C85.8945 33.4977 86 27.5692 86 27.5692V15.712C86 15.712 85.9531 9.78345 80 9.78345C74.0469 9.78345 24.8312 9.78345 20.0001 9.78345C13.9151 9.78345 14.0001 15.712 14.0001 15.712ZM14.0001 45.3549V57.212C14.0001 57.212 14.1788 63.1406 20.0001 63.1406C25.8214 63.1406 74.1055 63.1406 80 63.1406C85.8945 63.1406 86 57.212 86 57.212V45.3549C86 45.3549 85.9531 39.4263 80 39.4263C74.0469 39.4263 24.8312 39.4263 20.0001 39.4263C13.9151 39.4263 14.0001 45.3549 14.0001 45.3549ZM14.0001 74.9977V86.8549C14.0001 86.8549 14.1788 92.7834 20.0001 92.7834C25.8214 92.7834 74.1055 92.7834 80 92.7834C85.8945 92.7834 86 86.8549 86 86.8549V74.9977C86 74.9977 85.9531 69.0692 80 69.0692C74.0469 69.0692 24.8312 69.0692 20.0001 69.0692C13.9151 69.0692 14.0001 74.9977 14.0001 74.9977ZM20.0001 57.212V45.3549H26.0001V57.212H20.0001ZM32 57.212V45.3549H38V57.212H32ZM44 57.212V45.3549H50V57.212H44ZM56 57.212V45.3549H62V57.212H56ZM74 51.2834V45.3549H80V51.2834H74ZM20.0001 27.5692V15.712H26.0001V27.5692H20.0001ZM32 27.5692V15.712H38V27.5692H32ZM44 27.5692V15.712H50V27.5692H44ZM56 27.5692V15.712H62V27.5692H56ZM74 21.6406V15.712H80V21.6406H74ZM20.0001 86.8549V74.9977H26.0001V86.8549H20.0001ZM32 86.8549V74.9977H38V86.8549H32ZM44 86.8549V74.9977H50V86.8549H44ZM56 86.8549V74.9977H62V86.8549H56ZM74 80.9263V74.9977H80V80.9263H74Z"
-                      fill="#49AF62"
-                    />
-                  </svg>
-                </div>
-                <div class="hosting_feature_item_content">
-                  <h4>Daily Offsite Backups</h4>
+              <div class="swiper-slide">
+                <div class="roadmap_card">
+                  <h1>2022</h1>
                   <p>
-                    We strive to provide top rare reliability and affordability
-                    that most shared hosting will bring quality.
+                    HostOrient became the fastest-growing web hosting company.
                   </p>
                 </div>
               </div>
 
-              <div class="hosting_feature_item">
-                <div class="hosting_feature_item_icon">
-                  <svg
-                    width="100"
-                    height="101"
-                    viewBox="0 0 100 101"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x="0.5"
-                      y="1.28345"
-                      width="99"
-                      height="99"
-                      rx="11.5"
-                      fill="#E4F3E8"
-                    />
-                    <rect
-                      x="0.5"
-                      y="1.28345"
-                      width="99"
-                      height="99"
-                      rx="11.5"
-                      stroke="#49AF62"
-                    />
-                    <path
-                      d="M34.1618 37.6986L28.6655 43.1948L33.0325 47.5618L38.5288 42.0656L34.1618 37.6986Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M12.4342 23.2334L9.73924 25.9284C8.75359 26.914 8.75359 28.511 9.73924 29.5092L12.0849 31.8548L16.564 27.3632L12.4342 23.2334Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M24.5698 22.8874L20.0881 27.3691L23.9082 31.1892L28.3899 26.7075L24.5698 22.8874Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M18.3345 29.1304L13.8528 33.6121L17.6728 37.4321L22.1545 32.9504L18.3345 29.1304Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M23.9252 34.7119L19.4336 39.191L21.7667 41.5242C22.7524 42.5098 24.3494 42.5098 25.3475 41.5242L28.0425 38.8292L23.9252 34.7119Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M18.3231 25.5916L22.8147 21.1L20.4816 18.7668C19.4959 17.7812 17.8989 17.7812 16.9008 18.7668L14.2058 21.4618L18.3231 25.5916Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M32.4966 34.3751C33.4822 33.3895 33.4822 31.7925 32.4966 30.7943L30.1634 28.4612L25.6843 32.9528L29.8016 37.0701L32.4966 34.3751Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M24.1497 68.1618L26.0088 66.3027L34.73 75.0239L32.8709 76.8829C30.4629 79.2909 26.5577 79.2909 24.1497 76.8829C21.7418 74.475 21.7418 70.5698 24.1497 68.1618Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M79.2966 42.385C73.4825 48.1991 64.0751 48.1866 58.2734 42.385C52.4593 36.5709 52.4593 27.1759 58.2734 21.3618L79.2966 42.385Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M90.8751 27.0512H88.3798C88.3798 18.9039 81.7547 12.2788 73.6074 12.2788V9.78345C83.1271 9.78345 90.8751 17.5315 90.8751 27.0512Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M84.4743 27.0513H81.979C81.979 22.4349 78.2235 18.6919 73.6196 18.6919V16.1966C79.596 16.1841 84.4743 21.0625 84.4743 27.0513Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M73.6071 30.2577C75.378 30.2577 76.8136 28.8221 76.8136 27.0512C76.8136 25.2803 75.378 23.8447 73.6071 23.8447C71.8362 23.8447 70.4006 25.2803 70.4006 27.0512C70.4006 28.8221 71.8362 30.2577 73.6071 30.2577Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M58.9579 62.5069L53.4617 68.0032L57.8287 72.3702L63.3249 66.8739L58.9579 62.5069Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M62.191 72.9902L59.4961 75.6852C58.5104 76.6709 58.5104 78.2679 59.4961 79.266L61.8417 81.6116L66.3208 77.12L62.191 72.9902Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M74.3257 72.6465L69.844 77.1282L73.664 80.9482L78.1457 76.4665L74.3257 72.6465Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M68.0903 78.8857L63.6086 83.3674L67.4287 87.1875L71.9104 82.7058L68.0903 78.8857Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M73.6823 84.4688L69.1907 88.9479L71.5238 91.281C72.5095 92.2667 74.1065 92.2667 75.1046 91.281L77.7996 88.586L73.6823 84.4688Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M68.0802 75.3484L72.5718 70.8568L70.2387 68.5237C69.253 67.538 67.656 67.538 66.6579 68.5237L63.9629 71.2186L68.0802 75.3484Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M82.2661 84.1444C83.2518 83.1587 83.2518 81.5617 82.2661 80.5636L79.933 78.2305L75.4539 82.7221L79.5712 86.8394L82.2661 84.1444Z"
-                      fill="#49AF62"
-                    />
-                    <path
-                      d="M61.4051 50.0332L50.9995 39.6276C49.6146 38.2302 47.3563 38.2302 45.9714 39.6276L27.6682 57.9309C26.2708 59.3158 26.2708 61.5741 27.6682 62.959L38.0737 73.3645C39.4586 74.7619 41.7169 74.7619 43.1018 73.3645L61.4051 55.0613C62.8025 53.6764 62.8025 51.4181 61.4051 50.0332ZM34.3307 61.0002L32.272 58.9415L45.8716 45.3419L47.9303 47.4006L34.3307 61.0002Z"
-                      fill="#49AF62"
-                    />
-                  </svg>
-                </div>
-                <div class="hosting_feature_item_content">
-                  <h4>Latest Technology</h4>
+              <div class="swiper-slide">
+                <div class="roadmap_card">
+                  <h1>2023</h1>
                   <p>
-                    We strive to provide top rare reliability and affordability
-                    that most shared hosting will bring quality.
+                    HostOrient became the fastest-growing web hosting company.
+                  </p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="roadmap_card">
+                  <h1>2024</h1>
+                  <p>
+                    HostOrient became the fastest-growing web hosting company.
                   </p>
                 </div>
               </div>
             </div>
-
-            <div class="hosting_feature_btn">
-              <a href="#">More Feature</a>
+            <div class="navigation">
+              <div class="swiper-button-next">
+                <img src="./assets/img/icons/about/left_arrow.svg" alt="" />
+              </div>
+              <div class="swiper-button-prev">
+                <img src="./assets/img/icons/about/right_arrow.svg" alt="" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Hosting Feature End -->
+    <!-- Roadmap End -->
+
+    <!-- Owner and Founder Start -->
+    <section id="owner">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <div class="owner_wrapper">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="owner_card">
+                      <div class="owner_img">
+                        <img src="" alt="" loading="lazy" />
+                      </div>
+                      <div class="owner_details">
+                        <h1>Md. Abu Bakkar</h1>
+                        <h4>Founder & CEO</h4>
+
+                        <p>
+                          As we look to the future, our vision is clear: to be
+                          the leading provider of hosting solutions worldwide,
+                          known for our innovation, reliability, and unwavering
+                          commitment to customer success.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="owner_card">
+                      <div class="owner_img">
+                        <img src="" alt="" loading="lazy" />
+                      </div>
+                      <div class="owner_details">
+                        <h1>Md. Abu Bakkar</h1>
+                        <h4>Founder & CEO</h4>
+
+                        <p>
+                          As we look to the future, our vision is clear: to be
+                          the leading provider of hosting solutions worldwide,
+                          known for our innovation, reliability, and unwavering
+                          commitment to customer success.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Owner and Founder End -->
 
     <!-- Testimonial Start -->
     <section id="testimonial">
@@ -1845,317 +1785,51 @@
     </section>
     <!-- Testimonial end -->
 
-    <!-- FAQ Start -->
-    <section id="faq">
+    <!-- Partners Start -->
+    <section id="partner">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <div class="faq_head">
-              <h1>Frequently Asked Questions</h1>
-              <p>We've compiled a list of answers to common questions.</p>
+            <div class="partner_head">
+              <h1>Our Partners</h1>
+              <p>
+                Discover the power of our hosting partnerships and unlock new
+                opportunities for growth and success.
+              </p>
             </div>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-lg-6">
-            <div class="accordion">
-              <div class="accordion-item">
-                <div class="accordion-item-header">
-                  <p>Can I use my existing domain with Google Workspace?</p>
-                  <span>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M24 13.7143H13.7143V24H10.2857V13.7143H0V10.2857H10.2857V0H13.7143V10.2857H24V13.7143Z"
-                        fill="#1A1A1A"
-                      />
-                    </svg>
-                  </span>
-                </div>
-                <div class="accordion-item-body">
-                  <div class="accordion-item-body-content">
-                    Yes, you can use an existing domain with your Google
-                    Workspace order.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <div class="accordion-item-header">
-                  <p>
-                    What happens to my existing mail, contacts, and calendar
-                    data when I move to Google Workspace?
-                  </p>
-                  <span>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M24 13.7143H13.7143V24H10.2857V13.7143H0V10.2857H10.2857V0H13.7143V10.2857H24V13.7143Z"
-                        fill="#1A1A1A"
-                      />
-                    </svg>
-                  </span>
-                </div>
-                <div class="accordion-item-body">
-                  <div class="accordion-item-body-content">
-                    3CX is an IP PBX software that enables unified communication
-                    by integrating various communication channels like voice,
-                    video, and messaging into a single platform.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <div class="accordion-item-header">
-                  <p>What is the space provided per Email Account?</p>
-                  <span>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M24 13.7143H13.7143V24H10.2857V13.7143H0V10.2857H10.2857V0H13.7143V10.2857H24V13.7143Z"
-                        fill="#1A1A1A"
-                      />
-                    </svg>
-                  </span>
-                </div>
-                <div class="accordion-item-body">
-                  <div class="accordion-item-body-content">
-                    3CX is an IP PBX software that enables unified communication
-                    by integrating various communication channels like voice,
-                    video, and messaging into a single platform.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <div class="accordion-item-header">
-                  <p>
-                    Is Google Workspace compatible with the email client I use
-                    today?
-                  </p>
-                  <span>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M24 13.7143H13.7143V24H10.2857V13.7143H0V10.2857H10.2857V0H13.7143V10.2857H24V13.7143Z"
-                        fill="#1A1A1A"
-                      />
-                    </svg>
-                  </span>
-                </div>
-                <div class="accordion-item-body">
-                  <div class="accordion-item-body-content">
-                    3CX is an IP PBX software that enables unified communication
-                    by integrating various communication channels like voice,
-                    video, and messaging into a single platform.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <div class="accordion-item-header">
-                  <p>Which mobile phones can I access my mail from?</p>
-                  <span>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M24 13.7143H13.7143V24H10.2857V13.7143H0V10.2857H10.2857V0H13.7143V10.2857H24V13.7143Z"
-                        fill="#1A1A1A"
-                      />
-                    </svg>
-                  </span>
-                </div>
-                <div class="accordion-item-body">
-                  <div class="accordion-item-body-content">
-                    3CX is an IP PBX software that enables unified communication
-                    by integrating various communication channels like voice,
-                    video, and messaging into a single platform.
-                  </div>
+          <div id="sliderPartner" class="owl-carousel">
+            <div class="content-area">
+              <div class="content">
+                <div class="partner_card">
+                  <img src="./assets/img/about/partner_img_1.svg" alt="" />
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-6">
-            <div class="accordion">
-              <div class="accordion-item">
-                <div class="accordion-item-header">
-                  <p>Which mobile phones can I access my mail from?</p>
-                  <span>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M24 13.7143H13.7143V24H10.2857V13.7143H0V10.2857H10.2857V0H13.7143V10.2857H24V13.7143Z"
-                        fill="#1A1A1A"
-                      />
-                    </svg>
-                  </span>
-                </div>
-                <div class="accordion-item-body">
-                  <div class="accordion-item-body-content">
-                    Your email can be accessed using any Smartphone or Tablet.
-                    The Gmail interface is compatible on all major Operating
-                    systems such as iOS, Android, Windows Mobile, Symbian and
-                    Blackberry.
-                  </div>
+            <div class="content-area">
+              <div class="content">
+                <div class="partner_card">
+                  <img src="./assets/img/about/partner_img_2.svg" alt="" />
                 </div>
               </div>
+            </div>
 
-              <div class="accordion-item">
-                <div class="accordion-item-header">
-                  <p>
-                    If I only want one of the products, do I have to buy the
-                    entire suite?
-                  </p>
-                  <span>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M24 13.7143H13.7143V24H10.2857V13.7143H0V10.2857H10.2857V0H13.7143V10.2857H24V13.7143Z"
-                        fill="#1A1A1A"
-                      />
-                    </svg>
-                  </span>
-                </div>
-                <div class="accordion-item-body">
-                  <div class="accordion-item-body-content">
-                    It incorporates robust security measures like call
-                    encryption and regular updates to ensure data safety.
-                  </div>
+            <div class="content-area">
+              <div class="content">
+                <div class="partner_card">
+                  <img src="./assets/img/about/partner_img_3.svg" alt="" />
                 </div>
               </div>
+            </div>
 
-              <div class="accordion-item">
-                <div class="accordion-item-header">
-                  <p>Can I create mailing lists?</p>
-                  <span>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M24 13.7143H13.7143V24H10.2857V13.7143H0V10.2857H10.2857V0H13.7143V10.2857H24V13.7143Z"
-                        fill="#1A1A1A"
-                      />
-                    </svg>
-                  </span>
-                </div>
-                <div class="accordion-item-body">
-                  <div class="accordion-item-body-content">
-                    It incorporates robust security measures like call
-                    encryption and regular updates to ensure data safety.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <div class="accordion-item-header">
-                  <p>What is your SPAM policy?</p>
-                  <span>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M24 13.7143H13.7143V24H10.2857V13.7143H0V10.2857H10.2857V0H13.7143V10.2857H24V13.7143Z"
-                        fill="#1A1A1A"
-                      />
-                    </svg>
-                  </span>
-                </div>
-                <div class="accordion-item-body">
-                  <div class="accordion-item-body-content">
-                    It incorporates robust security measures like call
-                    encryption and regular updates to ensure data safety.
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <div class="accordion-item-header">
-                  <p>Can I transfer my existing Google Workspace?</p>
-                  <span>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M24 13.7143H13.7143V24H10.2857V13.7143H0V10.2857H10.2857V0H13.7143V10.2857H24V13.7143Z"
-                        fill="#1A1A1A"
-                      />
-                    </svg>
-                  </span>
-                </div>
-                <div class="accordion-item-body">
-                  <div class="accordion-item-body-content">
-                    It incorporates robust security measures like call
-                    encryption and regular updates to ensure data safety.
-                  </div>
+            <div class="content-area">
+              <div class="content">
+                <div class="partner_card">
+                  <img src="./assets/img/about/partner_img_4.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -2163,165 +1837,7 @@
         </div>
       </div>
     </section>
-    <!-- FAQ End -->
-
-    <!-- Newsletter Start -->
-    <section id="newsletter">
-      <div class="container">
-        <div class="row d-flex align-items-center">
-          <div class="col-lg-5">
-            <div class="newsletter_content">
-              <div class="newsletter_img">
-                <img
-                  loading="lazy"
-                  src="./assets/img/home/newsletter_img.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="newsletter_content">
-              <h1>Need Some Help?</h1>
-              <p>
-                Whether you’re stuck or just want some tips on where to start,
-                hit up our experts anytime.
-              </p>
-
-              <div class="newsletter_items">
-                <div class="newsletter_item">
-                  <a href="#">
-                    <div class="newsletter_icon">
-                      <svg
-                        width="64"
-                        height="61"
-                        viewBox="0 0 64 61"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M51.8521 46.8116V46.3817V35.1406C51.8521 34.0361 50.9566 33.1406 49.8521 33.1406H1.99988C0.895309 33.1406 -0.00012207 34.0361 -0.00012207 35.1406V58.0537C-0.00012207 59.1583 0.895309 60.0537 1.99988 60.0537H49.8521C50.9566 60.0537 51.8521 59.1583 51.8521 58.0537V56.4223V55.9923C51.8521 55.8303 51.907 55.6731 52.008 55.5462L55.8069 50.7734C56.8498 49.4631 55.9167 47.5279 54.242 47.5279H52.5685C52.1728 47.528 51.8521 47.2073 51.8521 46.8116ZM16.3313 52.1152C16.3313 52.5109 16.0105 52.8316 15.6148 52.8316H6.70074C6.30522 52.8316 5.9843 52.5109 5.9843 52.1152C5.9843 52.0398 5.99913 51.9686 6.02084 51.9004C5.99913 51.8322 5.9843 51.7609 5.9843 51.6856C5.9843 51.2899 6.30522 50.9691 6.70074 50.9691H15.615C16.0107 50.9691 16.3314 51.2899 16.3314 51.6856C16.3314 51.7609 16.3166 51.8322 16.295 51.9004C16.3165 51.9686 16.3313 52.0398 16.3313 52.1152ZM16.3313 46.6813C16.3313 47.077 16.0105 47.3978 15.6148 47.3978H6.70074C6.30522 47.3978 5.9843 47.077 5.9843 46.6813C5.9843 46.606 5.99913 46.5347 6.02084 46.4665C5.99913 46.3983 5.9843 46.3271 5.9843 46.2517C5.9843 45.856 6.30522 45.5353 6.70074 45.5353H15.615C16.0107 45.5353 16.3314 45.856 16.3314 46.2517C16.3314 46.3271 16.3166 46.3983 16.295 46.4665C16.3165 46.5347 16.3313 46.606 16.3313 46.6813ZM16.3447 41.1033C16.3447 41.499 16.0241 41.8197 15.6284 41.8197H6.71297C6.31745 41.8197 5.99653 41.499 5.99653 41.1033C5.99653 41.0279 6.01136 40.9567 6.03307 40.8885C6.01136 40.8203 5.99653 40.749 5.99653 40.6737C5.99653 40.2778 6.31745 39.9572 6.71297 39.9572H15.6284C16.0241 39.9572 16.3447 40.2778 16.3447 40.6737C16.3447 40.749 16.3299 40.8203 16.3083 40.8885C16.3299 40.9567 16.3447 41.0278 16.3447 41.1033ZM45.6473 52.1152C45.6473 52.5109 45.3266 52.8316 44.9309 52.8316H20.89C20.4945 52.8316 20.1736 52.5109 20.1736 52.1152C20.1736 52.0398 20.1884 51.9686 20.2101 51.9004C20.1884 51.8322 20.1736 51.7609 20.1736 51.6856C20.1736 51.2899 20.4945 50.9691 20.89 50.9691H44.931C45.3267 50.9691 45.6475 51.2899 45.6475 51.6856C45.6475 51.7609 45.6327 51.8322 45.6113 51.9004C45.6327 51.9686 45.6473 52.0398 45.6473 52.1152ZM45.6473 46.6813C45.6473 47.077 45.3266 47.3978 44.9309 47.3978H20.89C20.4945 47.3978 20.1736 47.077 20.1736 46.6813C20.1736 46.606 20.1884 46.5347 20.2101 46.4665C20.1884 46.3983 20.1736 46.3271 20.1736 46.2517C20.1736 45.856 20.4945 45.5353 20.89 45.5353H44.931C45.3267 45.5353 45.6475 45.856 45.6475 46.2517C45.6475 46.3271 45.6327 46.3983 45.6113 46.4665C45.6327 46.5347 45.6473 46.606 45.6473 46.6813ZM45.6597 41.1033C45.6597 41.499 45.339 41.8197 44.9433 41.8197H20.9022C20.5067 41.8197 20.1859 41.499 20.1859 41.1033C20.1859 41.0279 20.2008 40.9567 20.2223 40.8885C20.2006 40.8203 20.1859 40.749 20.1859 40.6737C20.1859 40.2778 20.5067 39.9572 20.9022 39.9572H44.9434C45.3391 39.9572 45.6599 40.2778 45.6599 40.6737C45.6599 40.749 45.645 40.8203 45.6236 40.8885C45.645 40.9567 45.6597 41.0278 45.6597 41.1033Z"
-                          fill="#49AF62"
-                        />
-                        <path
-                          d="M13.3916 0C12.287 0 11.3916 0.895431 11.3916 2V12.4922V12.922C11.3916 13.3176 11.071 13.6384 10.6751 13.6384H9.00214C7.32753 13.6384 6.39444 15.5734 7.43719 16.8838L11.2356 21.657C11.3367 21.7838 11.3916 21.9409 11.3916 22.103V22.5328V24.9138C11.3916 26.0184 12.287 26.9138 13.3916 26.9138H61.2452C62.3497 26.9138 63.2452 26.0184 63.2452 24.9138V2C63.2452 0.895432 62.3497 0 61.2452 0H13.3916ZM17.3526 8.0969C17.3526 7.70122 17.6735 7.38046 18.0691 7.38046H42.1102C42.5059 7.38046 42.8267 7.70122 42.8267 8.0969C42.8267 8.17228 42.8119 8.24352 42.7903 8.31187C42.812 8.38006 42.8267 8.4513 42.8267 8.52668C42.8267 8.92236 42.5059 9.24312 42.1102 9.24312H18.0689C17.6734 9.24312 17.3525 8.92236 17.3525 8.52668C17.3525 8.4513 17.3673 8.38006 17.389 8.31187C17.3674 8.24352 17.3526 8.17228 17.3526 8.0969ZM42.8388 19.1087C42.8388 19.5043 42.518 19.8251 42.1223 19.8251H18.0813C17.6858 19.8251 17.3648 19.5043 17.3648 19.1087C17.3648 19.0333 17.3797 18.962 17.4014 18.8937C17.3797 18.8255 17.3648 18.7543 17.3648 18.6789C17.3648 18.2832 17.6858 17.9624 18.0813 17.9624H42.1225C42.5182 17.9624 42.8389 18.283 42.8389 18.6789C42.8389 18.7543 42.8239 18.8255 42.8025 18.8937C42.8239 18.962 42.8388 19.0333 42.8388 19.1087ZM42.8388 13.8182C42.8388 14.2139 42.518 14.5346 42.1223 14.5346H18.0813C17.6858 14.5346 17.3648 14.2139 17.3648 13.8182C17.3648 13.7428 17.3797 13.6716 17.4014 13.6032C17.3797 13.535 17.3648 13.4638 17.3648 13.3884C17.3648 12.9927 17.6858 12.672 18.0813 12.672H42.1225C42.5182 12.672 42.8389 12.9926 42.8389 13.3884C42.8389 13.4638 42.8239 13.535 42.8025 13.6032C42.8239 13.6716 42.8388 13.7428 42.8388 13.8182ZM46.6691 8.0969C46.6691 7.70122 46.9897 7.38046 47.3854 7.38046H56.2998C56.6955 7.38046 57.0163 7.70122 57.0163 8.0969C57.0163 8.17228 57.0013 8.24352 56.9799 8.31187C57.0014 8.38006 57.0163 8.4513 57.0163 8.52668C57.0163 8.92236 56.6955 9.24312 56.2998 9.24312H47.3854C46.9897 9.24312 46.6691 8.92236 46.6691 8.52668C46.6691 8.4513 46.6838 8.38006 46.7054 8.31187C46.6838 8.24352 46.6691 8.17228 46.6691 8.0969ZM57.0296 19.1087C57.0296 19.5043 56.7088 19.8251 56.3131 19.8251H47.3975C47.0018 19.8251 46.6811 19.5043 46.6811 19.1087C46.6811 19.0333 46.6959 18.962 46.7174 18.8937C46.6957 18.8255 46.6811 18.7543 46.6811 18.6789C46.6811 18.2832 47.0018 17.9624 47.3975 17.9624H56.3131C56.7088 17.9624 57.0296 18.283 57.0296 18.6789C57.0296 18.7543 57.0146 18.8255 56.9932 18.8937C57.0146 18.962 57.0296 19.0333 57.0296 19.1087ZM57.0296 13.8182C57.0296 14.2139 56.7088 14.5346 56.3131 14.5346H47.3975C47.0018 14.5346 46.6811 14.2139 46.6811 13.8182C46.6811 13.7428 46.6959 13.6716 46.7174 13.6032C46.6957 13.535 46.6811 13.4638 46.6811 13.3884C46.6811 12.9927 47.0018 12.672 47.3975 12.672H56.3131C56.7088 12.672 57.0296 12.9926 57.0296 13.3884C57.0296 13.4638 57.0146 13.535 56.9932 13.6032C57.0146 13.6716 57.0296 13.7428 57.0296 13.8182Z"
-                          fill="#49AF62"
-                        />
-                      </svg>
-                    </div>
-                    <p>Sales Chat</p>
-                  </a>
-                </div>
-
-                <div class="newsletter_item">
-                  <a href="#">
-                    <div class="newsletter_icon">
-                      <svg
-                        width="64"
-                        height="61"
-                        viewBox="0 0 64 61"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M14.1824 24.7951C14.1824 23.5791 13.2096 22.5679 11.9936 22.5679C11.9808 22.5679 11.9808 22.5679 11.968 22.5679C5.3632 22.5679 0 27.9311 0 34.5359C0 41.1407 5.3632 46.5039 11.968 46.5039C11.9808 46.5039 11.9808 46.5039 11.9936 46.5039C13.2096 46.5039 14.1824 45.4927 14.1824 44.2767V24.7951Z"
-                          fill="#49AF62"
-                        />
-                        <path
-                          d="M49.8176 24.7951C49.8176 23.5791 50.7904 22.5679 52.0064 22.5679C52.0192 22.5679 52.0192 22.5679 52.032 22.5679C58.6368 22.5679 64 27.9311 64 34.5359C64 41.1407 58.6368 46.5039 52.032 46.5039C52.0192 46.5039 52.0192 46.5039 52.0064 46.5039C50.7904 46.5039 49.8176 45.4927 49.8176 44.2767V24.7951Z"
-                          fill="#49AF62"
-                        />
-                        <path
-                          d="M58.2015 32.2576C56.9727 32.2576 55.9743 31.2208 55.9743 29.928C55.9743 16.1424 45.2351 6.7216 32.0255 6.7216C18.8159 6.7216 8.07671 16.1552 8.07671 29.928C8.07671 31.208 7.07831 32.2576 5.84951 32.2576C4.62071 32.2576 3.62231 31.2208 3.62231 29.928C3.62231 13.5824 16.3711 0.283203 32.0255 0.283203C47.6799 0.283203 60.4287 13.5824 60.4287 29.928C60.4287 31.2208 59.4303 32.2576 58.2015 32.2576Z"
-                          fill="#49AF62"
-                        />
-                        <path
-                          d="M37.6961 57.1917C36.9537 57.1917 36.1729 57.1533 35.3665 57.0893L35.6225 54.1197C49.9841 55.3741 53.1585 43.4573 53.2865 42.9453L56.1793 43.6621C56.1409 43.8157 55.2193 47.4765 52.1857 50.9453C49.6385 53.8893 45.1073 57.1917 37.6961 57.1917Z"
-                          fill="#49AF62"
-                        />
-                        <path
-                          d="M35.0977 60.3667C37.6709 60.3667 39.7569 58.2807 39.7569 55.7075C39.7569 53.1343 37.6709 51.0483 35.0977 51.0483C32.5245 51.0483 30.4385 53.1343 30.4385 55.7075C30.4385 58.2807 32.5245 60.3667 35.0977 60.3667Z"
-                          fill="#49AF62"
-                        />
-                      </svg>
-                    </div>
-                    <p>Support</p>
-                  </a>
-                </div>
-
-                <div class="newsletter_item">
-                  <a href="#">
-                    <div class="newsletter_icon">
-                      <svg
-                        width="60"
-                        height="61"
-                        viewBox="0 0 60 61"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M33.3333 20.2832H26.6667V26.9499H33.3333V20.2832ZM46.6667 20.2832H40V26.9499H46.6667V20.2832ZM56.6667 41.9499C52.6667 41.9499 48.6667 41.2832 44.6667 39.9499C43.6667 39.6165 42.3333 39.9499 41.3333 40.6165L34 47.9499C24.6667 43.2832 17 35.2832 12 25.9499L19.3333 18.6165C20.3333 17.6165 20.6667 16.2832 20 15.2832C19 11.6165 18.3333 7.61654 18.3333 3.61654C18.3333 1.61654 17 0.283203 15 0.283203H3.33333C1.33333 0.283203 0 1.61654 0 3.61654C0 34.9499 25.3333 60.2832 56.6667 60.2832C58.6667 60.2832 60 58.9499 60 56.9499V45.2832C60 43.2832 58.6667 41.9499 56.6667 41.9499ZM53.3333 20.2832V26.9499H60V20.2832H53.3333Z"
-                          fill="#49AF62"
-                        />
-                      </svg>
-                    </div>
-                    <p>Call Now</p>
-                  </a>
-                </div>
-
-                <div class="newsletter_item">
-                  <a href="#">
-                    <div class="newsletter_icon">
-                      <svg
-                        width="66"
-                        height="61"
-                        viewBox="0 0 66 61"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M63.4951 19.9536L33.4233 40.691C33.2138 40.835 32.9651 40.9135 32.7294 40.9135C32.4938 40.9135 32.245 40.835 32.0356 40.691L1.96377 19.9536C0.772414 20.8962 0 22.3494 0 23.999V55.3799C0 58.2209 2.30415 60.525 5.14507 60.525H60.3007C63.1416 60.525 65.4458 58.2209 65.4458 55.3799V23.9859C65.4588 22.3494 64.6864 20.8962 63.4951 19.9536ZM23.7092 40.1149L8.50965 55.3145C8.39182 55.4323 8.23472 55.4978 8.07762 55.4978C7.92052 55.4978 7.76342 55.4323 7.64559 55.3145C7.40994 55.0788 7.40994 54.6861 7.64559 54.4504L22.8451 39.2509C23.0808 39.0152 23.4735 39.0152 23.7092 39.2509C23.9579 39.4865 23.9579 39.8793 23.7092 40.1149ZM57.8133 55.3145C57.6954 55.4323 57.5383 55.4978 57.3812 55.4978C57.2241 55.4978 57.067 55.4323 56.9492 55.3145L41.7497 40.1149C41.514 39.8793 41.514 39.4865 41.7497 39.2509C41.9853 39.0152 42.3781 39.0152 42.6137 39.2509L57.8133 54.4504C58.0489 54.6861 58.0489 55.0788 57.8133 55.3145Z"
-                          fill="#49AF62"
-                        />
-                        <path
-                          d="M46.8686 24.2739H18.5903V26.1068H46.8686V24.2739Z"
-                          fill="#49AF62"
-                        />
-                        <path
-                          d="M18.5903 28.4372L20.4625 29.7332H44.9964L46.8686 28.4372V27.9004H18.5903V28.4372Z"
-                          fill="#49AF62"
-                        />
-                        <path
-                          d="M46.8686 20.6475H18.5903V22.4803H46.8686V20.6475Z"
-                          fill="#49AF62"
-                        />
-                        <path
-                          d="M59.9604 18.3302L34.6933 0.89197C33.5019 0.0802807 31.944 0.0802807 30.7526 0.89197L5.49861 18.3302C5.11895 18.592 5.11895 19.1419 5.49861 19.4037L13.8773 25.1903V15.0049H51.5816V25.1903L59.9604 19.4037C60.34 19.1419 60.34 18.592 59.9604 18.3302Z"
-                          fill="#49AF62"
-                        />
-                        <path
-                          d="M23.0544 31.5137L25.7121 33.3465H39.7465L42.4041 31.5137H23.0544Z"
-                          fill="#49AF62"
-                        />
-                        <path
-                          d="M37.1546 35.1401H28.3176L30.7658 36.829C30.8443 36.8813 30.9098 36.9206 30.9883 36.973H34.4838C34.5624 36.9337 34.6279 36.8813 34.7064 36.829L37.1546 35.1401Z"
-                          fill="#49AF62"
-                        />
-                      </svg>
-                    </div>
-                    <p>Send Email</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Newsletter End -->
+    <!-- Partners End -->
 
     <!-- Footer Start -->
     <section id="footer">
@@ -2760,18 +2276,22 @@
     <script src="./assets/js/jquery-1.12.4.min.js"></script>
     <!-- jQuery End -->
 
-    <script src="./assets/js/navbar.js"></script>
-    <script src="./assets/js/backToTop.js"></script>
-    <script src="./assets/js/accordion.js"></script>
-
-    <!-- Bootstrap JS Link Start -->
-    <script src="./assets/css/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Bootstrap JS Link End -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Owl Carousel JS Start -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./assets/js/testimonial.js"></script>
     <!-- Owl Carousel JS End -->
+
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/backToTop.js"></script>
+    <script src="./assets/js/accordion.js"></script>
+    <script src="./assets/js/about.js"></script>
+
+    <!-- Bootstrap JS Link Start -->
+    <script src="./assets/css/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS Link End -->
   </body>
 </html>
