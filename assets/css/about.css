@@ -137,7 +137,7 @@ a {
   font-weight: 500;
   text-align: center;
   color: var(--dim-gray);
-  margin-top: 30px;
+  margin: 30px 0 50px;
 }
 
 .about_wrapper {
@@ -198,11 +198,21 @@ a {
   padding: 0 0 100px;
 }
 
-.navigation {
-  position: relative;
-  width: 100px;
-  height: 80px;
-  margin: auto;
+.roadmap_head h1 {
+  font-family: var(--primary-font);
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.roadmap_head p {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  color: var(--dim-gray);
+  margin: 30px 0 50px;
 }
 
 .roadmap_card {
@@ -220,15 +230,41 @@ a {
   -o-transition: 0.4s;
 }
 
+.roadmap_card h1 {
+  font-family: var(--primary-font);
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.roadmap_card p {
+  font-family: var(--secondary-font);
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  color: var(--dim-gray);
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
 .roadmap_card:hover {
   border-color: var(--primary-color);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.navigation {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  margin: 30px auto 0;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
   display: inline-block;
   border: 1px solid #e6e7e8;
+  padding: 0 22px !important;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -244,6 +280,25 @@ a {
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  border-color: var(--primary-color);
+}
+
+@media screen and (max-width: 990px) {
+  #roadmap {
+    padding: 0 0 60px;
+  }
+
+  .roadmap_head h1 {
+    font-size: 2em;
+  }
+
+  .roadmap_card h1 {
+    font-size: 1.8em;
+  }
 }
 
 /* Roadmap End */
@@ -324,6 +379,12 @@ a {
   font-size: 1em;
   text-align: center;
   margin: 35px 0 0;
+}
+
+@media screen and (max-width: 990px) {
+  #owner {
+    padding: 0 0 60px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -553,6 +614,10 @@ a {
 }
 
 @media screen and (max-width: 990px) {
+  #partner {
+    padding: 0 0 60px;
+  }
+
   .partner_head h1 {
     font-size: 2em;
   }
